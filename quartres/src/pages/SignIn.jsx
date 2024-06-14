@@ -6,7 +6,8 @@ import { Link } from 'react-router-dom';
 function SignIn() {
 
     const [formMail, setformMail] = useState({
-        name: "",
+        email: "",
+        password: "",
     })
 
     function updateForm(e) {
