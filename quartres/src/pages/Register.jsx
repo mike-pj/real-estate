@@ -13,13 +13,43 @@ function Register() {
         confirmpassword: '',
         accept: false,
     })
+
+    const [error, setError] = useState(false)
+    const [loading, setLoading] = useState(false)
+
     function updateForm(e) {
         const { name, value, type, checked } = e.target
 
         setFormData(prev => {
-            return { ...prev, [name]: type === "checkbox" ? checked  : value }
-        })
-    }
+            return { ...prev, [name]: type === "checkbox" ? checked : value }
+        });
+    };
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+
+        try {
+            setLoading(true);
+            setError(false);
+            const res = await fetch('/api/auth/register', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(formData),
+            });
+            const data = await res.json();
+            console.log(data);
+            setLoading(false);
+            if(data.success === false) {
+                setError(true);
+                return;
+            }
+        } catch (error) {
+            setLoading(false);
+            setError(true);
+        }
+    };
 
     return (
         <section className=''>
@@ -54,7 +84,7 @@ function Register() {
 
                 <div className='flex justify-center items-center mb-[80px]'>
                     <div className='w-full flex justify-center items-center'>
-                        <form action="">
+                        <form onSubmit={handleSubmit} action="">
                             <div>
                                 <div>
                                     <input
@@ -132,10 +162,11 @@ function Register() {
                                 </div>
 
                                 <div className='-ml-[130px]'>
-                                    <button className='bg-orange-500 w-[200px] h-[60px] ml-[130px] px-4 text-white hover:bg-black'>
-                                        CREATE ACCOUNT
+                                    <button disabled={loading} className='bg-orange-500 w-[200px] h-[60px] ml-[130px] px-4 text-white hover:bg-black'>
+                                        {loading ? "loading..." : "CREATE ACCOUNT"}
                                     </button>
                                 </div>
+                                <p className='text-red-700 mt-5'>{error && 'Something went wrong!'}</p>
 
                                 <div className='flex justify-center items-center text-[#7b888b]'>
                                     <div>
