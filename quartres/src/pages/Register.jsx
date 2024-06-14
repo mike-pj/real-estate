@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { FaHome } from 'react-icons/fa'
 import { RxCaretRight } from "react-icons/rx";
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 function Register() {
 
@@ -16,6 +16,7 @@ function Register() {
 
     const [error, setError] = useState(false)
     const [loading, setLoading] = useState(false)
+    const navigate = useNavigate();
 
     function updateForm(e) {
         const { name, value, type, checked } = e.target
@@ -45,6 +46,7 @@ function Register() {
                 setError(true);
                 return;
             }
+            navigate('/login')
         } catch (error) {
             setLoading(false);
             setError(true);
@@ -166,7 +168,9 @@ function Register() {
                                         {loading ? "loading..." : "CREATE ACCOUNT"}
                                     </button>
                                 </div>
-                                <p className='text-red-700 mt-5'>{error && 'Something went wrong!'}</p>
+                                <p className='text-red-700 mt-5'>
+                                    {error && 'Something went wrong!'}
+                                </p>
 
                                 <div className='flex justify-center items-center text-[#7b888b]'>
                                     <div>

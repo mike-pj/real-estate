@@ -1,22 +1,52 @@
 import React, {useState} from 'react'
 import { FaHome } from 'react-icons/fa'
 import { RxCaretRight } from "react-icons/rx";
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 function SignIn() {
 
-    const [formMail, setformMail] = useState({
+    const [formData, setformData] = useState({
         email: "",
         password: "",
-    })
+    });
+
+    const [error, setError] = useState(false)
+    const [loading, setLoading] = useState(false)
+    const navigate = useNavigate();
 
     function updateForm(e) {
         const { name, value } = e.target
 
-        setformMail(prev => {
+        setformData(prev => {
             return { ...prev, [name]: value }
         })
-    }
+    };
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+
+        try {
+            setLoading(true);
+            setError(false);
+            const res = await fetch('/api/auth/login', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(formData),
+            });
+            const data = await res.json();
+            setLoading(false);
+            if(data.success === false) {
+                setError(true);
+                return;
+            }
+            navigate('/')
+        } catch (error) {
+            setLoading(false);
+            setError(true);
+        }
+    };
 
     return (
         <section className=''>
@@ -51,14 +81,14 @@ function SignIn() {
 
                 <div className='flex justify-center items-center mb-[80px]'>
                     <div className='w-1/2 flex justify-center items-center'>
-                        <div>
+                        <form onSubmit={handleSubmit} action=''>
                             <div>
                                 <input
                                     type="email"
                                     name="email"
-                                    id=""
+                                    id="email"
                                     placeholder=" Email*"
-                                    value={formMail.email}
+                                    value={formData.email}
                                     className='p-2 border-2 border-[#e6e3e3] bg-white block w-[400px] h-[60px] mt-2 mb-9'
                                     onChange={updateForm}
                                 />
@@ -68,24 +98,25 @@ function SignIn() {
                                 <input
                                     type="password"
                                     name="password"
-                                    id=""
+                                    id="password"
                                     placeholder=" Password*"
-                                    value={formMail.email}
+                                    value={formData.password}
                                     className='p-2 border-2 border-[#e6e3e3] bg-white block w-[400px] h-[60px] mt-2 mb-9'
                                     onChange={updateForm}
                                 />
                             </div>
 
-                            <button className='bg-orange-500 h-[60px] w-[150px] px-4 text-white hover:bg-black'>
-                                SIGN IN
+                            <button disabled={loading} className='bg-orange-500 h-[60px] w-[150px] px-4 text-white hover:bg-black'>
+                                { loading ? "loading" : "SIGN IN" }
                             </button>
-                            <Link to='/login'>
+
+                            <Link to='/register'>
                              <p 
                                 className='text-[#7b888b] uppercase mt-6 hover:text-orange-600'>
                                 forger your password?
                              </p>
                             </Link>
-                        </div>
+                        </form>
                     </div>
 
                     <div className='w-1/2 flex justify-center items-center -mt-16'>
