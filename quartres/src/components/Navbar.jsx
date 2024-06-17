@@ -30,22 +30,22 @@ function Navbar() {
             <div className="flex items-center">
                 <ul className='flex gap-5 text-[18px]'>
                     <li>
-                        <Link to="">Home+</Link>
+                        <Link to="/">Home+</Link>
                     </li>
                     <li>
-                        <Link to="">About+</Link>
+                        <Link to="/about">About+</Link>
                     </li>
                     <li>
-                        <Link to="">Property+</Link>
+                        <Link to="/property">Property+</Link>
+                    </li>
+                    {/* <li>
+                        <Link to="/news">News+</Link>
                     </li>
                     <li>
-                        <Link to="">News+</Link>
-                    </li>
+                        <Link to="/pages">Pages+</Link>
+                    </li> */}
                     <li>
-                        <Link to="">Pages+</Link>
-                    </li>
-                    <li>
-                        <Link to="">Contact</Link>
+                        <Link to="/contact">Contact</Link>
                     </li>
                 </ul>
             </div>
