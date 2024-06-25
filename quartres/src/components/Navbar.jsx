@@ -59,9 +59,12 @@ function Navbar() {
                         <Menus />
                     </div>
                 </div>
-                <button className='bg-white h-[50px] w-[50px] shadow-2xl flex items-center justify-center hover:bg-orange-500 hover:text-white'>
-                    <FaCartShopping />
-                </button>
+                <div className='relative hover:text-white'>
+                    <button className='bg-white h-[50px] w-[50px] shadow-2xl flex items-center justify-center hover:bg-orange-500 hover:text-white'>
+                        <FaCartShopping />
+                    </button>
+                    <div className='absolute top-1/2 -translate-y-6 right-1'> 2</div>
+                </div>
             </div>
         </nav>
     </header>

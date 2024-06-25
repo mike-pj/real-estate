@@ -35,9 +35,11 @@ const items = [
 
 function List_apartments() {
     const [isOpen, setIsOpen] = useState(false);
+    const [isOpens, setIsOpens] = useState(false);
     const [selectedOption, setSelectedOption] = useState(null);
     const [selectedItem, setSelectedItem] = useState(null);
     const toggling = () => setIsOpen(!isOpen);
+    const toggling2 = () => setIsOpens(!isOpens);
 
     const onOptionClicked = (value) => () => {
         setSelectedOption(value);
@@ -46,7 +48,7 @@ function List_apartments() {
 
     const onItemClicked = (value) => () => {
         setSelectedItem(value);
-        setIsOpen(false);
+        setIsOpens(false);
     };
 
     const [activeSearch, setActiveSearch] = useState([])
@@ -74,16 +76,16 @@ function List_apartments() {
 
                         <div className="flex gap-4">
                             <div className="relative w-[290px] font-normal h-[100px] text-[#909293]">
-                                <div className="bg-white pl-5 py-3 rounded-md border-2">
-                                    <button type="button" onClick={toggling}>
-                                        <div className="flex h-full justify-center items-center ">
+                                <div className="bg-white px-3 py-3 rounded-md border-2 cursor-pointer">
+                                    <div type="button" onClick={toggling}>
+                                        <div className="flex justify-between items-center">
                                             {selectedOption || "Sorting Apartment"}
-                                            <BiChevronDown size={20} className="ml-9" />
+                                            <BiChevronDown size={20} className="" />
                                         </div>
-                                    </button>
+                                    </div>
                                 </div>
                                 {isOpen && (
-                                    <div className="absolute w-[290px] top-7 right-0 z-10 mt-5 origin-top-right border bg-white ">
+                                    <div className="absolute w-[290px] top-7 right-0 z-20 mt-5 origin-top-right border bg-white ">
                                         {options.map((option) => (
                                             <button
                                                 type="button"
@@ -100,16 +102,16 @@ function List_apartments() {
                             </div>
 
                             <div className="relative w-[290px] font-normal h-[100px] text-[#909293]">
-                                <div className="bg-white pl-5 py-3 rounded-md border-2">
-                                    <button type="button" onClick={toggling}>
-                                        <div className="flex h-full justify-center items-center ">
+                                <div className="bg-white px-3 py-3 rounded-md border-2 cursor-pointer">
+                                    <div type="button" onClick={toggling2}>
+                                        <div className="flex justify-between items-center ">
                                             {selectedItem || "Range Per Sq Ft"}
-                                            <BiChevronDown size={20} className="ml-9" />
+                                            <BiChevronDown size={20} className="" />
                                         </div>
-                                    </button>
+                                    </div>
                                 </div>
-                                {isOpen && (
-                                    <div className="absolute w-[290px] top-7 right-0 z-10 mt-5 origin-top-right border bg-white ">
+                                {isOpens && (
+                                    <div className="absolute w-[290px] top-7 right-0 z-20 mt-5 origin-top-right border bg-white ">
                                         {items.map((item) => (
                                             <button
                                                 type="button"
@@ -126,7 +128,7 @@ function List_apartments() {
                             </div>
                         </div>
                     </div>
-                    <form action="" className="w-[870px] relative ml-[34px] z-10 mb-7 ">
+                    <form action="" className="w-[870px] relative ml-[34px] z-10 mb-7">
                         <div className="relative">
                             <input onChange={(e) => handleSearch(e)} type="search" placeholder="Search your keyword...." className="w-full p-4 bg-slate-200" />
                             <button className="w-[60px] h-[57px] border bg-orange-500 absolute top-1/2 -translate-y-1/2 -right-1">
@@ -762,28 +764,28 @@ function List_apartments() {
                             <div className="flex justify-between items-center mb-4 ">
                                 <div className="space-x-2">
                                     <input type="checkbox" name="" id="" className="" />
-                                    <label htmlFor="" className="text-sm"> Single</label>
+                                    <label htmlFor="" className="text-sm cursor-pointer"> Single</label>
                                 </div>
                                 <p>3,924</p>
                             </div>
                             <div className="flex justify-between items-center mb-4">
                                 <div className="space-x-2">
                                     <input type="checkbox" name="" id="" className="" />
-                                    <label htmlFor="" className="text-sm">  Double</label>
+                                    <label htmlFor="" className="text-sm cursor-pointer">  Double</label>
                                 </div>
                                 <p>3,700</p>
                             </div>
                             <div className="flex justify-between items-center mb-4">
                                 <div className="space-x-2">
                                     <input type="checkbox" name="" id="" className="" />
-                                    <label htmlFor="" className="text-sm"> Up to 3</label>
+                                    <label htmlFor="" className="text-sm cursor-pointer"> Up to 3</label>
                                 </div>
                                 <p>2,924</p>
                             </div>
                             <div className="flex justify-between items-center mb-4">
                                 <div className="space-x-2">
                                     <input type="checkbox" name="" id="" className="" />
-                                    <label htmlFor="" className="text-sm"> Up to 5</label>
+                                    <label htmlFor="" className="text-sm cursor-pointer"> Up to 5</label>
                                 </div>
                                 <p>2,665</p>
                             </div>

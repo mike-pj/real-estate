@@ -7,6 +7,7 @@ import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import About from './pages/About'
 import Property from './pages/Property'
+import Contact from './pages/Contact'
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path='/Register' element={<Register />} />
         <Route path='/About' element={<About />} />
         <Route path='/Property' element={<Property />} />
+        <Route path='/Contact' element={<Contact />} />
       </Routes>
       <Footer />
     </BrowserRouter>
