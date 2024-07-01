@@ -8,6 +8,7 @@ import Footer from './components/Footer'
 import About from './pages/About'
 import Property from './pages/Property'
 import Contact from './pages/Contact'
+import Checkout from './pages/Checkout'
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path='/About' element={<About />} />
         <Route path='/Property' element={<Property />} />
         <Route path='/Contact' element={<Contact />} />
+        <Route path='/Checkout' element={<Checkout />} />
       </Routes>
       <Footer />
     </BrowserRouter>
