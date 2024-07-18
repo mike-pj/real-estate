@@ -24,9 +24,9 @@ function Check_out() {
 
     const [isOpen, setIsOpen] = useState(false);
 
-    const [toggle, setToggle] = useState(true);
+    const [toggleOpen, setToggleOpen] = useState(false);
 
-    const [toggles, setToggles] = useState(true);
+    const [togglesOpen, setTogglesOpen] = useState(false);
 
     const toggling = () => setIsOpen(!isOpen);
 
@@ -41,54 +41,56 @@ function Check_out() {
                 <div className="relative mb-[500px]">
                     <div>
                         <p className="w-[1230px] mx-auto p-5 border text-xl font-bold bg-[#dae0e3]">
-                            Returning customer? <span onClick={() => setToggle(!toggle)} className="text-orange-600 font-bold cursor-pointer"> Click here to login</span>
+                            Returning customer? <span onClick={() => setToggleOpen(!toggleOpen)} className="text-orange-600 font-bold cursor-pointer"> Click here to login</span>
                         </p>
                     </div>
 
-                    {toggle && (
-                        <div className="absolute top-[80px] left-[104px] w-[1230px] pt-5 px-[70px] border-2">
-                            <p className="text-[#909293] mb-7">Please login your account.</p>
-                            <div className="flex justify-between items-center mb-9">
-                                <div>
-                                    <div className="relative">
-                                        <input
-                                            type="text"
-                                            name="name"
-                                            id="name"
-                                            placeholder="Enter your name"
-                                            className="w-[500px] block border-2 border-gray-300 px-3 py-5"
-                                        />
-                                        <i className="absolute top-1/2 -translate-y-1/2 right-0 mx-4 text-red-500">
-                                            <FaUser />
-                                        </i>
+                    {toggleOpen && (
+                        // <div className="absolute top-[80px] left-[104px] w-[1230px] pt-5 px-[70px] border-2">
+                        <div className={`${!toggleOpen && "hidden"}`}>
+                            <div className="absolute top-[80px] left-[104px] w-[1230px] pt-5 px-[70px] border-2">
+                                <p className="text-[#909293] mb-7">Please login your account.</p>
+                                <div className="flex justify-between items-center mb-9">
+                                    <div>
+                                        <div className="relative">
+                                            <input
+                                                type="text"
+                                                name="name"
+                                                id="name"
+                                                placeholder="Enter your name"
+                                                className="w-[500px] block border-2 border-gray-300 px-3 py-5"
+                                            />
+                                            <i className="absolute top-1/2 -translate-y-1/2 right-0 mx-4 text-red-500">
+                                                <FaUser />
+                                            </i>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <div className="relative">
+                                            <input
+                                                type="text"
+                                                name="email"
+                                                id="email"
+                                                placeholder="Enter email address"
+                                                className="w-[500px] block border-2 border-gray-300 px-3 py-5"
+                                            />
+                                            <i className="absolute top-1/2 -translate-y-1/2 right-0 mx-4 text-red-500">
+                                                <MdEmail />
+                                            </i>
+                                        </div>
                                     </div>
                                 </div>
-
-                                <div>
-                                    <div className="relative">
-                                        <input
-                                            type="text"
-                                            name="email"
-                                            id="email"
-                                            placeholder="Enter email address"
-                                            className="w-[500px] block border-2 border-gray-300 px-3 py-5"
-                                        />
-                                        <i className="absolute top-1/2 -translate-y-1/2 right-0 mx-4 text-red-500">
-                                            <MdEmail />
-                                        </i>
-                                    </div>
+                                <div className="mb-8">
+                                    <button className='bg-orange-500 h-[60px] w-[150px] px-4 text-white hover:bg-black'>
+                                        LOGIN
+                                    </button>
+                                    <input type="checkbox" id="remember" className="ml-5" />
+                                    <label htmlFor="remember" className="text-[#909293]"> Remember me</label>
                                 </div>
-                            </div>
 
-                            <div className="mb-8">
-                                <button className='bg-orange-500 h-[60px] w-[150px] px-4 text-white hover:bg-black'>
-                                    LOGIN
-                                </button>
-                                <input type="checkbox" id="remember" className="ml-5" />
-                                <label htmlFor="remember" className="text-[#909293]"> Remember me</label>
+                                <p className="text-[#909293] mb-14">Lost your password?</p>
                             </div>
-
-                            <p className="text-[#909293] mb-14">Lost your password?</p>
                         </div>
                     )}
                 </div>
@@ -96,11 +98,11 @@ function Check_out() {
                 <div className="relative mb-[500px]">
                     <div>
                         <p className="w-[1230px] mx-auto p-5 border text-xl font-bold bg-[#dae0e3]">
-                            Have a coupon? <span onClick={() => setToggles(!toggles)} className="text-orange-600 font-bold cursor-pointer"> Click here to enter your code</span>
+                            Have a coupon? <span onClick={() => setTogglesOpen(!togglesOpen)} className="text-orange-600 font-bold cursor-pointer"> Click here to enter your code</span>
                         </p>
                     </div>
 
-                    {toggles && (
+                    {togglesOpen && (
                         <div className="absolute top-[80px] left-[104px] w-[1230px] pt-5 px-[70px] border-2">
                             <p className="text-[#909293] mb-7">If you have a coupon code, please apply it below..</p>
                             <div className="mb-9">
@@ -118,7 +120,7 @@ function Check_out() {
                             </div>
 
                             <div className="mb-8">
-                                <button className=' bg-black h-[60px] w-[200px] px-4 text-white hover:bg-white hover:text-black border-red-400 border-2'>
+                                <button className=' bg-black h-[60px] w-[200px] px-4 text-white hover:bg-white hover:text-black hover:border-red-400 border-2'>
                                     APPLY COUPON
                                 </button>
                             </div>
@@ -396,7 +398,7 @@ function Check_out() {
                                     <p className="pr-[40px] text-gray-500">$298.00</p>
                                 </div>
                             </div>
-                            
+
                             <div className="space-x-3 w-[450px] h-[40px] border-2 border-l-0 border-r-0">
                                 <div className="flex justify-between items-center bg-gray-50">
                                     <p className="flex justify-center h-[5vh] items-center tracking-wider pl-[15px] text-gray-500">OE Replica Wheels 	 <span className="font-bold text-black tracking-wider px-1"> × 2</span></p>

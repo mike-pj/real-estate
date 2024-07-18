@@ -26,13 +26,13 @@ function Properties_hm() {
             </div>
 
             <div className='flex flex-wrap justify-center gap-7 mb-[90px]'>
-                <div className='relative w-[30%] border-2 h-fit bg-white shadow-lg rounded-lg'>
+                <div className='relative group w-[30%] h-fit bg-white shadow-lg rounded-lg'>
 
                     <Link to="">
-                        <div className='relative'>
-                            <img className='h-[42svh]' src={stairs} alt="stairs" />
+                        <div className="relative overflow-hidden">
+                            <img className='h-[42svh] group-hover:scale-105 duration-500' src={stairs} alt="stairs" />
                             <Link to="">
-                                <div className='flex items-center gap-10 absolute top-[230px] left-4 z-10 text-white text-sm'>
+                                <div className='flex items-center gap-10 absolute top-[300px] left-4 z-10 text-white text-sm'>
                                     <p className='flex items-center gap-2   hover:text-orange-500'><i><FaMapMarkerAlt /></i>Belmont Garden, Chicago</p>
                                     <div>
                                         <div className='flex gap-3'>
@@ -89,13 +89,13 @@ function Properties_hm() {
                     </div>
                 </div>
 
-                <div className='relative w-[30%] border-2 h-fit bg-white shadow-lg rounded-lg'>
+                <div className='relative group w-[30%] h-fit bg-white shadow-lg rounded-lg'>
 
                     <Link to="">
-                        <div className='relative'>
-                            <img className='h-[42svh]' src={house_04} alt="stairs" />
+                        <div className='relative overflow-hidden'>
+                            <img className='h-[42svh] group-hover:scale-105 duration-500' src={house_04} alt="stairs" />
                             <Link to="">
-                                <div className='flex items-center gap-10 absolute top-[230px] left-4 z-10 text-white text-sm'>
+                                <div className='flex items-center gap-10 absolute top-[300px] left-4 z-10 text-white text-sm'>
                                     <p className='flex items-center gap-2   hover:text-orange-500'><i><FaMapMarkerAlt /></i>Belmont Garden, Chicago</p>
                                     <div>
                                         <div className='flex gap-3'>
@@ -152,13 +152,13 @@ function Properties_hm() {
                     </div>
                 </div>
 
-                <div className='relative w-[30%] border-2 h-fit bg-white shadow-lg rounded-lg'>
+                <div className='relative group w-[30%] h-fit bg-white shadow-lg rounded-lg'>
 
                     <Link to="">
-                        <div className='relative'>
-                            <img className='h-[42svh]' src={highrise_02} alt="highrise02" />
+                        <div className='relative overflow-hidden'>
+                            <img className='h-[42svh] group-hover:scale-105 duration-500' src={highrise_02} alt="highrise02" />
                             <Link to="">
-                                <div className='flex items-center gap-10 absolute top-[230px] left-4 z-10 text-white text-sm'>
+                                <div className='flex items-center gap-10 absolute top-[300px] left-4 z-10 text-white text-sm'>
                                     <p className='flex items-center gap-2   hover:text-orange-500'><i><FaMapMarkerAlt /></i>Belmont Garden, Chicago</p>
                                     <div>
                                         <div className='flex gap-3'>
@@ -215,13 +215,13 @@ function Properties_hm() {
                     </div>
                 </div>
 
-                <div className='relative w-[30%] border-2 h-fit bg-white shadow-lg rounded-lg'>
+                <div className='relative group w-[30%] h-fit bg-white shadow-lg rounded-lg'>
 
                     <Link to="">
-                        <div className='relative'>
-                            <img className='h-[42svh]' src={house_03} alt="house03" />
+                        <div className='relative overflow-hidden'>
+                            <img className='h-[42svh] group-hover:scale-105 duration-500' src={house_03} alt="house03" />
                             <Link to="">
-                                <div className='flex items-center gap-10 absolute top-[230px] left-4 z-10 text-white text-sm'>
+                                <div className='flex items-center gap-10 absolute top-[300px] left-4 z-10 text-white text-sm'>
                                     <p className='flex items-center gap-2   hover:text-orange-500'><i><FaMapMarkerAlt /></i>Belmont Garden, Chicago</p>
                                     <div>
                                         <div className='flex gap-3'>
@@ -279,13 +279,13 @@ function Properties_hm() {
 
                 </div>
 
-                <div className='relative w-[30%] border-2 h-fit bg-white shadow-lg rounded-lg'>
+                <div className='relative group w-[30%] h-fit bg-white shadow-lg rounded-lg'>
 
                     <Link to="">
-                        <div className='relative'>
-                            <img className='h-[42svh]' src={bed} alt="bed" />
+                        <div className='relative overflow-hidden'>
+                            <img className='h-[42svh] group-hover:scale-105 duration-500' src={bed} alt="bed" />
                             <Link to="">
-                                <div className='flex items-center gap-10 absolute top-[230px] left-4 z-10 text-white text-sm'>
+                                <div className='flex items-center gap-10 absolute top-[300px] left-4 z-10 text-white text-sm'>
                                     <p className='flex items-center gap-2   hover:text-orange-500'><i><FaMapMarkerAlt /></i>Belmont Garden, Chicago</p>
                                     <div>
                                         <div className='flex gap-3'>

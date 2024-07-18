@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import House3 from '../assets/house03.jpeg'
 import Wheels from '../assets/wheels.png'
 import Retainer from '../assets/retainer.png'
@@ -6,7 +7,7 @@ import Retainer from '../assets/retainer.png'
 function Cart_hm() {
     return (
         <section>
-            <div className='h-[150svh]'>
+            <div className='h-[134svh]'>
                 <div>
                     <div className='flex justify-around items-center px-[10px] border-b-2 w-[1250px] mx-auto mt-[100px] py-5'>
                         <p className='hover:text-orange-500 cursor-pointer'>x</p>
@@ -102,9 +103,12 @@ function Cart_hm() {
                                     <p className="pr-[40px]">$633.00</p>
                                 </div>
                             </div>
-                            <button className=' bg-orange-500 h-[60px] w-[450px] px-4 text-white hover:bg-white hover:text-black hover:border-black border'>
-                                Proceed to Checkout
-                            </button>
+                            <Link to="/checkout">
+                                <button className=' bg-orange-500 h-[60px] w-[450px] px-4 text-white hover:bg-white hover:text-black hover:border-black border'>
+                                    Proceed to Checkout
+                                </button>
+                            </Link>
+
                         </div>
                     </div>
                 </div>

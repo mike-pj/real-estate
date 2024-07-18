@@ -18,10 +18,12 @@ function News_about() {
             </div>
 
             <div className='flex flex-wrap justify-center gap-7 mb-[90px]'>
-                <div className='w-[30%] border-2 h-fit bg-white shadow-lg rounded-lg'>
+                <div className='w-[30%] group h-fit bg-white shadow-lg rounded-lg'>
 
                     <Link to="">
-                        <img src={stairs} alt="stairs" />
+                        <div className='overflow-hidden'>
+                            <img className='group-hover:scale-105 duration-500' src={stairs} alt="stairs" />
+                        </div>
                     </Link>
 
                     <div className='px-8'>
@@ -50,10 +52,12 @@ function News_about() {
                     </div>
                 </div>
 
-                <div className='w-[30%] border-2 h-fit bg-white shadow-lg rounded-lg'>
+                <div className='w-[30%] group h-fit bg-white shadow-lg rounded-lg'>
 
                     <Link to="">
-                        <img src={bed} alt="bed" />
+                        <div className='overflow-hidden'>
+                            <img className='group-hover:scale-105 duration-500' src={bed} alt="bed" />
+                        </div>
                     </Link>
 
                     <div className='px-8'>
@@ -82,12 +86,13 @@ function News_about() {
                     </div>
                 </div>
 
-                <div className='w-[30%] border-2 h-fit bg-white shadow-lg rounded-lg'>
+                <div className='w-[30%] group h-fit bg-white shadow-lg rounded-lg'>
 
                     <Link to="">
-                        <img src={house} alt="house" />
+                        <div className='overflow-hidden'>
+                            <img className='group-hover:scale-105 duration-500' src={house} alt="house" />
+                        </div>
                     </Link>
-
                     <div className='px-8'>
                         <div className='flex items-center gap-7 mt-6 mb-3'>
                             <Link to="">
@@ -114,10 +119,12 @@ function News_about() {
                     </div>
                 </div>
 
-                <div className='w-[30%] border-2 h-fit bg-white shadow-lg rounded-lg'>
+                <div className='w-[30%] group h-fit bg-white shadow-lg rounded-lg'>
 
                     <Link to="">
-                        <img src={balcony} alt="balcony" />
+                        <div className='overflow-hidden'>
+                            <img className='group-hover:scale-105 duration-500' src={balcony} alt="balcony" />
+                        </div>
                     </Link>
 
                     <div className='px-8'>
@@ -146,10 +153,12 @@ function News_about() {
                     </div>
                 </div>
 
-                <div className='w-[30%] border-2 h-fit bg-white shadow-lg rounded-lg'>
+                <div className='w-[30%] group h-fit bg-white shadow-lg rounded-lg'>
 
                     <Link to="">
-                        <img src={highrise} alt="highrise" />
+                        <div className='overflow-hidden'>
+                            <img className='group-hover:scale-105 duration-500' src={highrise} alt="highrise" />
+                        </div>
                     </Link>
 
                     <div className='px-8'>
