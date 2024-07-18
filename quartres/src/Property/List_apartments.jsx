@@ -150,10 +150,10 @@ function List_apartments() {
 
                     </form>
                     <div className="w-full flex flex-wrap justify-center gap-7 mb-[90px]">
-                        <div className="relative w-[45%] border-2 h-fit bg-white shadow-lg rounded-lg">
+                        <div className="relative w-[45%] group h-fit bg-white shadow-lg rounded-lg">
                             <Link to="">
-                                <div className="relative">
-                                    <img className="h-[42svh]" src={house_03} alt="house03" />
+                                <div className="relative overflow-hidden">
+                                    <img className="h-[42svh] group-hover:scale-105 duration-500" src={house_03} alt="house03" />
                                 </div>
                             </Link>
 
@@ -219,10 +219,10 @@ function List_apartments() {
                             </div>
                         </div>
 
-                        <div className="relative w-[45%] border-2 h-fit bg-white shadow-lg rounded-lg">
+                        <div className="relative w-[45%] group h-fit bg-white shadow-lg rounded-lg">
                             <Link to="">
-                                <div className="relative">
-                                    <img className="h-[42svh]" src={stairs} alt="stairs" />
+                                <div className="relative overflow-hidden">
+                                    <img className="h-[42svh] group-hover:scale-105 duration-500" src={stairs} alt="stairs" />
                                 </div>
                             </Link>
 
@@ -288,10 +288,10 @@ function List_apartments() {
                             </div>
                         </div>
 
-                        <div className="relative w-[45%] border-2 h-fit bg-white shadow-lg rounded-lg">
+                        <div className="relative w-[45%] group h-fit bg-white shadow-lg rounded-lg">
                             <Link to="">
-                                <div className="relative">
-                                    <img className="h-[42svh]" src={house_04} alt="house04" />
+                                <div className="relative overflow-hidden">
+                                    <img className="h-[42svh] group-hover:scale-105 duration-500" src={house_04} alt="house04" />
                                 </div>
                             </Link>
 
@@ -357,11 +357,11 @@ function List_apartments() {
                             </div>
                         </div>
 
-                        <div className="relative w-[45%] border-2 h-fit bg-white shadow-lg rounded-lg">
+                        <div className="relative w-[45%] group h-fit bg-white shadow-lg rounded-lg">
                             <Link to="">
-                                <div className="relative">
+                                <div className="relative overflow-hidden">
                                     <img
-                                        className="h-[42svh]"
+                                        className="h-[42svh] group-hover:scale-105 duration-500"
                                         src={highrise_02}
                                         alt="highrise02"
                                     />
@@ -430,10 +430,10 @@ function List_apartments() {
                             </div>
                         </div>
 
-                        <div className="relative w-[45%] border-2 h-fit bg-white shadow-lg rounded-lg">
+                        <div className="relative w-[45%] group h-fit bg-white shadow-lg rounded-lg">
                             <Link to="">
-                                <div className="relative">
-                                    <img className="h-[42svh]" src={bed} alt="bed" />
+                                <div className="relative overflow-hidden">
+                                    <img className="h-[42svh] group-hover:scale-105 duration-500" src={bed} alt="bed" />
                                 </div>
                             </Link>
 
@@ -499,10 +499,10 @@ function List_apartments() {
                             </div>
                         </div>
 
-                        <div className="relative w-[45%] border-2 h-fit bg-white shadow-lg rounded-lg">
+                        <div className="relative w-[45%] group h-fit bg-white shadow-lg rounded-lg">
                             <Link to="">
-                                <div className="relative">
-                                    <img className="h-[42svh]" src={house_05} alt="house05" />
+                                <div className="relative overflow-hidden">
+                                    <img className="h-[42svh] group-hover:scale-105 duration-500" src={house_05} alt="house05" />
                                 </div>
                             </Link>
 
