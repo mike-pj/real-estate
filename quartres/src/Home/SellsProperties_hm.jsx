@@ -13,13 +13,13 @@ import { Link } from 'react-router-dom'
 function SellsProperties_hm() {
 
     return (
-        <section className='bg-zinc-50'>
-            <div className="flex pl-12 pr-20 justify-between py-14 pb-[120px] gap-10">
+        <section className='bg-zinc-50 px-3 lg:px-0'>
+            <div className="flex flex-col lg:flex-row lg:pl-12 lg:pr-20 justify-between py-14 pb-[120px] gap-10">
 
-                <div className='w-1/2 text-zinc-500'>
+                <div className='lg:w-1/2 text-zinc-500'>
                     <h5 className='text-orange-600 bg-orange-200 w-fit px-4 py-1 mb-4 rounded-2xl'>About Us</h5>
 
-                    <h1 className='text-[45px] text-black w-[600px] leading-[60px] font-bold mb-6'>Today Sells Properties <span>.</span></h1>
+                    <h1 className='text-2xl md:text-3xl lg:text-[45px] text-black w-[600px] leading-[60px] font-bold mb-6'>Today Sells Properties <span>.</span></h1>
 
                     <p className='mb-6 w-9/12 leading-[30px]'>Houzez allow you to design unlimited panels and real estate custom forms to capture leads and keep record of all information</p>
 

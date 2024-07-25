@@ -6,15 +6,15 @@ import plan_view from '../assets/plan_view.png'
 function Apartments_hm() {
     return (
 
-        <section className='bg-[#f8f8fc] py-[110px]  px-[100px]'>
+        <section className='bg-[#f8f8fc] py-[110px]  xl:px-[100px]'>
             <div className='w-full flex justify-center items-center'>
-                <div>
-                    <h6 className='border rounded-[50px] w-fit px-5 bg-orange-100 mb-8 text-[red] ml-[100px]'> Apartment Sketch</h6>
-                    <h1 className='text-[50px] font-bold mb-9'> Apartments Plan</h1>
+                <div className=''>
+                    <h6 className='border rounded-[50px] w-fit mx-auto px-5 bg-orange-100 mb-8 text-[red]'> Apartment Sketch</h6>
+                    <h1 className='text-2xl md:text-4xl lg:text-[50px] text-center font-bold mb-9'> Apartments Plan</h1>
                 </div>
             </div>
 
-            <ul className='flex justify-evenly items-center text-xl mb-14'>
+            <ul className='flex justify-evenly items-center flex-wrap xl:text-xl mb-14'>
 
                 <Link to="">
                     <li>The Studio</li>
@@ -38,8 +38,8 @@ function Apartments_hm() {
 
             </ul>
 
-            <div className='flex gap-[50px]'>
-                <div className='w-1/2 bg-[#ff5a3c] text-white px-[80px] py-[80px]'>
+            <div className='flex flex-col lg:flex-row gap-[50px]'>
+                <div className='lg:w-1/2 bg-[#ff5a3c] text-white px-10 lg:px-[80px] py-[80px]'>
                     <h1 className='font-bold text-2xl mb-5'>Deluxe Portion</h1>
                     <p className='font-light leading-8 mb-9'>
                         Enimad minim veniam quis nostrud exercitation ullamco laboris. Lorem ipsum dolor sit amet cons aetetur adipisicing elit sedo eiusmod tempor.Incididunt labore et dolore magna aliqua. sed ayd minim veniam.
@@ -75,7 +75,7 @@ function Apartments_hm() {
                     </div>
                 </div>
 
-                <div className='w-1/2'>
+                <div className='w-1/2 m-auto  lg:m-0'>
                     <img src={plan_view} alt="plan_view" />
                 </div>
             </div>

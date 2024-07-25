@@ -26,21 +26,21 @@ function Footer() {
     return (
         <section >
             <div className='relative bg-[#171b2a] text-white py-[90px]'>
-                <div className='absolute flex justify-between items-center bg-orange-600 w-[86%] top-[-80px] h-[150px] left-[100px] px-[50px]'>
+                <div className='absolute flex justify-between items-center bg-orange-600 w-[86%] top-[-80px] h-[150px] left-1/2 -translate-x-1/2 px-[50px]'>
                     <div>
-                        <h1 className='text-[40px] font-bold'>Looking for a dream home?</h1>
-                        <p>
+                        <h1 className='xl:text-[40px] font-bold'>Looking for a dream home?</h1>
+                        <p className='text-sm md:text-base'>
                             We can help you realize your dream of a new home
                         </p>
                     </div>
 
                     <Link to="">
-                        <button className='flex items-center text-xl border h-[60px] px-[50px] text-black bg-white'>Explore Properties<span className=''><IoIosArrowRoundForward /></span></button>
+                        <button className='flex items-center lg:text-xl border h-[60px] px-4 lg:px-[50px] text-black bg-white'>Explore Properties<span className=''><IoIosArrowRoundForward /></span></button>
                     </Link>
                 </div>
 
-                <div className='flex justify-between mx-8 mt-[80px]'>
-                    <div className='w-1/3 pl-3'>
+                <div className='flex gap-y-7 flex-wrap justify-between px-8 mt-[80px]'>
+                    <div className='w-full md:w-1/2 xl:w-1/3 pl-3'>
                         <img className='mb-5' src={logo2} alt="logo" />
                         <p className='mb-5'>
                             Lorem ipsum dolor sit amet consectetur. Corrupti doloribus natus unde quis!
@@ -62,8 +62,8 @@ function Footer() {
                         </div>
                     </div>
 
-                    <div className='w-1/3 pl-3'>
-                        <h1 className='text-[30px] mb-4'> Company</h1>
+                    <div className='w-1/2 xl:w-1/3 pl-3'>
+                        <h1 className=' text-[26px] lg:text-[30px] mb-4'> Company</h1>
                         <ul>
                             <li className='mb-4 hover:text-orange-600'>
                                 <Link to="">About</Link>
@@ -86,8 +86,8 @@ function Footer() {
                         </ul>
                     </div>
 
-                    <div className='w-1/3 pl-3'>
-                        <h1 className='text-[30px] mb-4'> Services</h1>
+                    <div className='w-1/2 xl:w-1/3 pl-3'>
+                        <h1 className='text-[26px] lg:text-[30px] mb-4'> Services</h1>
                         <ul>
                             <li className='mb-4 hover:text-orange-600'>
                                 <Link to="">Order tracking</Link>
@@ -110,8 +110,8 @@ function Footer() {
                         </ul>
                     </div>
 
-                    <div className='w-1/3 pl-3'>
-                        <h1 className='text-[30px] mb-4'> Customer Care</h1>
+                    <div className='w-1/2 xl:w-1/3 pl-3'>
+                        <h1 className='text-[26px] lg:text-[30px] mb-4'> Customer Care</h1>
                         <ul>
                             <li className='mb-4 hover:text-orange-600'>
                                 <Link to="">Login</Link>
@@ -134,8 +134,8 @@ function Footer() {
                         </ul>
                     </div>
 
-                    <div className='w-1/3 pl-3'>
-                        <h1 className='text-[30px] mb-4'> News Letter</h1>
+                    <div className='w-1/2 xl:w-1/3 pl-3'>
+                        <h1 className='text-[26px] lg:text-[30px] mb-4'> News Letter</h1>
                         <p className='mb-3'>
                             Subscribe to our weekly Newsletter and receive updates via email.
                         </p>
@@ -146,10 +146,10 @@ function Footer() {
                                 id=""
                                 placeholder=" Email*"
                                 value={formMail.email}
-                                className='p-2 border-2 border-[grey] bg-white block w-fit h-[60px] mt-2'
+                                className='p-2 border-2 border-[grey] bg-white block w-8/12 xl:w-fit h-[60px] mt-2'
                                 onChange={updateForm}
                             />
-                            <div className='flex justify-center items-center h-[60px] mt-2 px-4 bg-orange-600 cursor-pointer mb-3'>
+                            <div className='flex justify-center items-center h-[60px] mt-2 px-2 xl:px-4 bg-orange-600 cursor-pointer mb-3'>
                                 <i><FaLocationArrow /></i>
                             </div>
                         </div>

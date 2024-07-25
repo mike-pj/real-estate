@@ -4,10 +4,10 @@ import { FaHome } from 'react-icons/fa'
 
 function Top() {
   return (
-    <section className='bg-[#F2F6F7] flex justify-between pt-[120px] pb-[70px] pl-[200px] pr-[100px] items-center'>
+    <section className='bg-[#F2F6F7] flex flex-col lg:flex-row justify-between pt-[40px] px-[15px] lg:pt-[120px] pb-[70px] lg:pl-[200px] lg:pr-[100px] items-center'>
       <img src={blank} alt="" className='w-[500px]' />
 
-      <div className="text-right flex flex-col w-[500px] items-end">
+      <div className="lg:text-right flex flex-col lg:w-[500px] items-end">
         <h4
           data-aos="fade-up"
           data-aos-offset="0"

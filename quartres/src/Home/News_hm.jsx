@@ -13,12 +13,12 @@ function News_hm() {
             <div className='w-full flex justify-center items-center'>
                 <div>
                     <h6 className='border rounded-[50px] w-fit px-5 bg-orange-100 mb-8 text-[red] ml-[150px]'> News & Blogs</h6>
-                    <h1 className='text-[50px] font-bold mb-9'> Latest News Feeds</h1>
+                    <h1 className='text-center lg:text-left text-2xl md:text-4xl xl:text-[50px] font-bold mb-9'> Latest News Feeds</h1>
                 </div>
             </div>
 
             <div className='flex flex-wrap justify-center gap-7 mb-[90px]'>
-                <div className='w-[30%] group h-fit bg-white shadow-lg rounded-lg'>
+                <div className='md:w-[42%] lg:w-[30%] group h-fit bg-white shadow-lg rounded-lg'>
 
                     <Link to="">
                         <div className='overflow-hidden'>
@@ -52,7 +52,7 @@ function News_hm() {
                     </div>
                 </div>
 
-                <div className='w-[30%] group h-fit bg-white shadow-lg rounded-lg'>
+                <div className='md:w-[42%] lg:w-[30%] group h-fit bg-white shadow-lg rounded-lg'>
 
                     <Link to="">
                         <div className='overflow-hidden'>
@@ -86,7 +86,7 @@ function News_hm() {
                     </div>
                 </div>
 
-                <div className='w-[30%] group h-fit bg-white shadow-lg rounded-lg'>
+                <div className='md:w-[42%] lg:w-[30%] group h-fit bg-white shadow-lg rounded-lg'>
 
                     <Link to="">
                         <div className='overflow-hidden'>
@@ -119,7 +119,7 @@ function News_hm() {
                     </div>
                 </div>
 
-                <div className='w-[30%] group h-fit bg-white shadow-lg rounded-lg'>
+                <div className='md:w-[42%] lg:w-[30%] group h-fit bg-white shadow-lg rounded-lg'>
 
                     <Link to="">
                         <div className='overflow-hidden'>
@@ -153,7 +153,7 @@ function News_hm() {
                     </div>
                 </div>
 
-                <div className='w-[30%] group h-fit bg-white shadow-lg rounded-lg'>
+                <div className='md:w-[42%] lg:w-[30%] group h-fit bg-white shadow-lg rounded-lg'>
 
                     <Link to="">
                         <div className='overflow-hidden'>

@@ -38,7 +38,7 @@ function Check_out() {
     return (
         <section>
             <div className="w-full h-[400vh] py-[120px]">
-                <div className="relative mb-[500px]">
+                <div className="relative">
                     <div>
                         <p className="w-[1230px] mx-auto p-5 border text-xl font-bold bg-[#dae0e3]">
                             Returning customer? <span onClick={() => setToggleOpen(!toggleOpen)} className="text-orange-600 font-bold cursor-pointer"> Click here to login</span>
@@ -48,7 +48,7 @@ function Check_out() {
                     {toggleOpen && (
                         // <div className="absolute top-[80px] left-[104px] w-[1230px] pt-5 px-[70px] border-2">
                         <div className={`${!toggleOpen && "hidden"}`}>
-                            <div className="absolute top-[80px] left-[104px] w-[1230px] pt-5 px-[70px] border-2">
+                            <div className="w-[1230px] pt-5 px-[70px] border-2">
                                 <p className="text-[#909293] mb-7">Please login your account.</p>
                                 <div className="flex justify-between items-center mb-9">
                                     <div>
@@ -95,7 +95,7 @@ function Check_out() {
                     )}
                 </div>
 
-                <div className="relative mb-[500px]">
+                <div className="relative">
                     <div>
                         <p className="w-[1230px] mx-auto p-5 border text-xl font-bold bg-[#dae0e3]">
                             Have a coupon? <span onClick={() => setTogglesOpen(!togglesOpen)} className="text-orange-600 font-bold cursor-pointer"> Click here to enter your code</span>
@@ -103,7 +103,7 @@ function Check_out() {
                     </div>
 
                     {togglesOpen && (
-                        <div className="absolute top-[80px] left-[104px] w-[1230px] pt-5 px-[70px] border-2">
+                        <div className="w-[1230px] pt-5 px-[70px] border-2">
                             <p className="text-[#909293] mb-7">If you have a coupon code, please apply it below..</p>
                             <div className="mb-9">
                                 <div>
@@ -343,7 +343,7 @@ function Check_out() {
                                 name="message"
                                 id="message"
                                 placeholder="Notes about your order, e.g special notes for delivery"
-                                className="w-[1170px] h-[20svh] block border-2 border-gray-300 px-3 py-3 mt-5 mb-[80px]"
+                                className="w-[1170px] h-[20svh] resize-none block border-2 border-gray-300 px-3 py-3 mt-5 mb-[80px]"
                             />
                             <i className="absolute top-1/2 -translate-y-[63px] right-0 mx-4 text-red-500">
                                 <FaPencil />

@@ -17,7 +17,7 @@ import { Link } from 'react-router-dom'
 function Properties_hm() {
     return (
 
-        <section className='bg-[white] py-[110px]  px-[50px]'>
+        <section className='bg-[white] py-[110px] px-6 lg:px-[50px]'>
             <div className='w-full flex justify-center items-center'>
                 <div>
                     <h6 className='border rounded-[50px] w-fit px-5 bg-orange-100 mb-8 text-[red] ml-[150px]'> Properties</h6>
@@ -26,11 +26,11 @@ function Properties_hm() {
             </div>
 
             <div className='flex flex-wrap justify-center gap-7 mb-[90px]'>
-                <div className='relative group w-[30%] h-fit bg-white shadow-lg rounded-lg'>
+                <div className='relative group w-full md:w-[42%] lg:w-[30%] h-fit bg-white shadow-lg rounded-lg'>
 
-                    <Link to="">
+                    <Link className='block' to="">
                         <div className="relative overflow-hidden">
-                            <img className='h-[42svh] group-hover:scale-105 duration-500' src={stairs} alt="stairs" />
+                            <img className='h-[42svh] w-full group-hover:scale-105 duration-500' src={stairs} alt="stairs" />
                             <Link to="">
                                 <div className='flex items-center gap-10 absolute top-[300px] left-4 z-10 text-white text-sm'>
                                     <p className='flex items-center gap-2   hover:text-orange-500'><i><FaMapMarkerAlt /></i>Belmont Garden, Chicago</p>
@@ -89,11 +89,11 @@ function Properties_hm() {
                     </div>
                 </div>
 
-                <div className='relative group w-[30%] h-fit bg-white shadow-lg rounded-lg'>
+                <div className='relative group w-full md:w-[42%] lg:w-[30%] h-fit bg-white shadow-lg rounded-lg'>
 
-                    <Link to="">
+                    <Link className='block' to="">
                         <div className='relative overflow-hidden'>
-                            <img className='h-[42svh] group-hover:scale-105 duration-500' src={house_04} alt="stairs" />
+                            <img className='h-[42svh] w-full group-hover:scale-105 duration-500' src={house_04} alt="stairs" />
                             <Link to="">
                                 <div className='flex items-center gap-10 absolute top-[300px] left-4 z-10 text-white text-sm'>
                                     <p className='flex items-center gap-2   hover:text-orange-500'><i><FaMapMarkerAlt /></i>Belmont Garden, Chicago</p>
@@ -152,11 +152,11 @@ function Properties_hm() {
                     </div>
                 </div>
 
-                <div className='relative group w-[30%] h-fit bg-white shadow-lg rounded-lg'>
+                <div className='relative group w-full md:w-[42%] lg:w-[30%] h-fit bg-white shadow-lg rounded-lg'>
 
-                    <Link to="">
+                    <Link className='block' to="">
                         <div className='relative overflow-hidden'>
-                            <img className='h-[42svh] group-hover:scale-105 duration-500' src={highrise_02} alt="highrise02" />
+                            <img className='h-[42svh] w-full group-hover:scale-105 duration-500' src={highrise_02} alt="highrise02" />
                             <Link to="">
                                 <div className='flex items-center gap-10 absolute top-[300px] left-4 z-10 text-white text-sm'>
                                     <p className='flex items-center gap-2   hover:text-orange-500'><i><FaMapMarkerAlt /></i>Belmont Garden, Chicago</p>
@@ -215,11 +215,11 @@ function Properties_hm() {
                     </div>
                 </div>
 
-                <div className='relative group w-[30%] h-fit bg-white shadow-lg rounded-lg'>
+                <div className='relative group w-full md:w-[42%] lg:w-[30%] h-fit bg-white shadow-lg rounded-lg'>
 
-                    <Link to="">
+                    <Link className='block' to="">
                         <div className='relative overflow-hidden'>
-                            <img className='h-[42svh] group-hover:scale-105 duration-500' src={house_03} alt="house03" />
+                            <img className='h-[42svh] w-full group-hover:scale-105 duration-500' src={house_03} alt="house03" />
                             <Link to="">
                                 <div className='flex items-center gap-10 absolute top-[300px] left-4 z-10 text-white text-sm'>
                                     <p className='flex items-center gap-2   hover:text-orange-500'><i><FaMapMarkerAlt /></i>Belmont Garden, Chicago</p>
@@ -279,11 +279,11 @@ function Properties_hm() {
 
                 </div>
 
-                <div className='relative group w-[30%] h-fit bg-white shadow-lg rounded-lg'>
+                <div className='relative group w-full md:w-[42%] lg:w-[30%] h-fit bg-white shadow-lg rounded-lg'>
 
-                    <Link to="">
+                    <Link className='block' to="">
                         <div className='relative overflow-hidden'>
-                            <img className='h-[42svh] group-hover:scale-105 duration-500' src={bed} alt="bed" />
+                            <img className='h-[42svh] w-full group-hover:scale-105 duration-500' src={bed} alt="bed" />
                             <Link to="">
                                 <div className='flex items-center gap-10 absolute top-[300px] left-4 z-10 text-white text-sm'>
                                     <p className='flex items-center gap-2   hover:text-orange-500'><i><FaMapMarkerAlt /></i>Belmont Garden, Chicago</p>

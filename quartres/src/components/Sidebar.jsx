@@ -5,16 +5,18 @@ import Wheels from '../assets/wheels.png'
 import Retainer from '../assets/retainer.png'
 import House04 from '../assets/house04.jpeg'
 import { Link } from 'react-router-dom';
+import Dark from './Dark';
 
-function Sidebar() {
+
+function Sidebar({isOpen, toggling}) {
    
     return (
-        <section>
-            <div className='relative'>
-                <div className='absolute top-[-100px] -right-[50px] w-[400px] bg-white text-black px-8 py-12'>
+        <section className='fixed left-0 top-0 backdrop-brightness-50 w-full'>
+            <div className={` w-[400px] h-full ml-auto`} onClick={(e) => e.stopPropagation()}>
+                <div className={`${isOpen ? 'mr-[0]' : 'mr-[-400px]'} w-[400px] bg-white transition-all delay-700 ease-in-out duration-700 text-black px-8 py-12`}>
                     <div className='flex justify-between items-center border-b-2 pb-7 mb-12'>
                         <p className='text-[#79797a]'>Cart</p>
-                        <i className='text-2xl cursor-pointer'><RxCross2 /></i>
+                        <i className='text-2xl cursor-pointer' onClick={toggling}><RxCross2 /></i>
                     </div>
 
                     <div className='px-2 flex justify-start items-center gap-4 border-b-2 pb-5 mb-5'>

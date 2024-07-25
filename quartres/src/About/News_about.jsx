@@ -18,7 +18,7 @@ function News_about() {
             </div>
 
             <div className='flex flex-wrap justify-center gap-7 mb-[90px]'>
-                <div className='w-[30%] group h-fit bg-white shadow-lg rounded-lg'>
+                <div className='w-full md:w-[44%] lg:w-[30%] group h-fit bg-white shadow-lg rounded-lg'>
 
                     <Link to="">
                         <div className='overflow-hidden'>
@@ -52,7 +52,7 @@ function News_about() {
                     </div>
                 </div>
 
-                <div className='w-[30%] group h-fit bg-white shadow-lg rounded-lg'>
+                <div className='w-full md:w-[44%] lg:w-[30%] group h-fit bg-white shadow-lg rounded-lg'>
 
                     <Link to="">
                         <div className='overflow-hidden'>
@@ -86,7 +86,7 @@ function News_about() {
                     </div>
                 </div>
 
-                <div className='w-[30%] group h-fit bg-white shadow-lg rounded-lg'>
+                <div className='w-full md:w-[44%] lg:w-[30%] group h-fit bg-white shadow-lg rounded-lg'>
 
                     <Link to="">
                         <div className='overflow-hidden'>
@@ -119,7 +119,7 @@ function News_about() {
                     </div>
                 </div>
 
-                <div className='w-[30%] group h-fit bg-white shadow-lg rounded-lg'>
+                <div className='w-full md:w-[44%] lg:w-[30%] group h-fit bg-white shadow-lg rounded-lg'>
 
                     <Link to="">
                         <div className='overflow-hidden'>
@@ -153,7 +153,7 @@ function News_about() {
                     </div>
                 </div>
 
-                <div className='w-[30%] group h-fit bg-white shadow-lg rounded-lg'>
+                <div className='w-full md:w-[44%] lg:w-[30%] group h-fit bg-white shadow-lg rounded-lg'>
 
                     <Link to="">
                         <div className='overflow-hidden'>

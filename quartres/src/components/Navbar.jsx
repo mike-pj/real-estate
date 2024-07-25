@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FaFacebook, FaGlobe, FaInstagram, FaLocationArrow, FaMailBulk, FaSearch, FaTwitter, FaUser } from 'react-icons/fa'
+import { FaBars, FaFacebook, FaGlobe, FaInstagram, FaLocationArrow, FaMailBulk, FaSearch, FaTwitter, FaUser } from 'react-icons/fa'
 import { Link } from 'react-router-dom';
 import logo from '../assets/logo.png'
 import { FaCartShopping } from 'react-icons/fa6';
@@ -12,9 +12,11 @@ function Navbar() {
 
     const toggling = () => setIsOpen(!isOpen);
 
+    const [mobileNav, setMobileNav] = useState(false)
+
     return (
         <header className='text-white'>
-            <div className="flex justify-between bg-[#071c1f] #133236 h-[45px] px-[60px]">
+            <div className="hidden md:flex justify-between bg-[#071c1f] #133236 h-[45px] px-[60px]">
                 <div className="flex items-center gap-6">
                     <p className="flex items-center gap-2 cursor-pointer hover:text-orange-500"><i><FaMailBulk /></i> info@webmail.com</p>
                     <p className="flex items-center gap-2 cursor-pointer hover:text-orange-500"><i><FaLocationArrow /></i> 15/A, Nest Tower, NYC</p>
@@ -29,12 +31,12 @@ function Navbar() {
                 </div>
             </div>
 
-            <nav className="flex bg-white text-black h-[100px] justify-between px-[50px]">
+            <nav className="flex bg-white text-black h-[100px] justify-between border lg:px-[50px]">
                 <div className="flex items-center">
-                    <img src={logo} alt="" />
+                    <img src={logo} alt="" className='w-24 md:w-auto' />
                 </div>
                 <div className="flex items-center">
-                    <ul className='flex gap-5 text-[18px]'>
+                    <ul className={`flex absolute top-[180px] delay-300 duration-300 ease-in-out transition ${mobileNav ? 'left-1/2 -translate-x-1/2' : '-left-[100%]'} rounded-lg lg:rounded-none bg-white flex-col w-[250px] items-center py-8 lg:py-0 lg:flex-row lg:w-auto lg:h-auto lg:static gap-5 text-[18px]`}>
                         <li>
                             <Link to="/">Home+</Link>
                         </li>
@@ -64,6 +66,7 @@ function Navbar() {
                         <div className='absolute top-[50px] bg-white w-[150px] shadow-lg -left-[100px] py-4 px-4 hidden group-hover:block'>
                             <Menus />
                         </div>
+
                     </div>
                     <div className='relative hover:text-white'>
                         {!isOpen ?
@@ -76,11 +79,12 @@ function Navbar() {
 
                             (
                                 <div onClick={toggling} className='fixed z-20'>
-                                    <Sidebar />
+                                    <Sidebar isOpen={isOpen} toggling={toggling} />
                                 </div>
                             )
                         }
                     </div>
+                    <button onClick={() => setMobileNav(prev => !prev)} className='bg-white h-[50px] w-[50px] shadow-2xl flex items-center justify-center lg:hidden hover:bg-orange-500 hover:text-white'><FaBars /></button>
                 </div>
             </nav>
         </header>

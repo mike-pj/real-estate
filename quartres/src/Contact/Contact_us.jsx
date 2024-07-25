@@ -151,7 +151,7 @@ function Contact_us() {
                                     type="text"
                                     name=""
                                     id=""
-                                    placeholder="Enter your name"
+                                    placeholder="Enter your phone number"
                                     className="w-[500px] block border-2 border-gray-300 px-3 py-5"
                                 />
                                 <i className="absolute top-1/2 -translate-y-1/2 right-0 mx-4  text-red-500">

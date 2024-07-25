@@ -8,16 +8,16 @@ import { Link } from 'react-router-dom'
 
 function About_hm() {
   return (
-    <section className='bg-white'>
-        <div className="flex pl-12 pr-7 justify-between py-[100px]">
-            <div className="relative max-h-[600px] border">
+    <section className='bg-zinc-50'>
+        <div className="flex flex-col lg:flex-row px-3 lg:pl-12 lg:pr-7 justify-between py-14">
+            <div className="relative h-[600px] border">
                 <img src={About} alt="" className='h-full w-full'/>
-                <iframe className='absolute -left-5 bottom-12' src="https://www.youtube.com/embed/X7R-q9rsrtU?autoplay=1&amp;showinfo=0" frameborder="0"></iframe>
+                <iframe className='absolute -left-5 bottom-12' src="https://www.youtube.com/embed/ARz0Nz2d-sg" title="OUR NEW EMPTY HOUSE TOUR!!" frameborder="0"></iframe>
             </div>
 
-            <div className='w-1/2 text-zinc-500'>
+            <div className='lg:w-1/2 mt-7 lg:mt-0 text-zinc-500'>
                 <h5 className='text-orange-600 bg-orange-200 w-fit px-4 py-1 mb-4 rounded-2xl'>About Us</h5>
-                <h1 className='text-[45px] text-black w-[600px] leading-[60px] font-bold mb-6'>The Leading Real Estate Rental Marketplace <span>.</span></h1>
+                <h1 className='text-[30px] lg:text-[45px] text-black lg:w-[600px] leading-[60px] font-bold mb-6'>The Leading Real Estate Rental Marketplace <span>.</span></h1>
                 <p className='mb-6 w-9/12 leading-[30px]'>Over 39,000 people work for us in more than 70 countries all over the This breadth of global coverage, combined with specialist services</p>
                 <div className="flex flex-wrap gap-y-4 mb-5">
                     <div className='w-2/4 flex items-center gap-2'>

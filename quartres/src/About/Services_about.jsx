@@ -18,8 +18,8 @@ function Services_about() {
                 </div>
             </div>
 
-            <div className='flex justify-center gap-7 pb-[120px]'>
-                <div className='w-[31%] border-2 h-[400px] bg-white shadow-lg rounded-lg'>
+            <div className='flex gap-y-6 flex-wrap justify-between pb-[120px]'>
+                <div className='w-[100%] md:w-[44%] lg:w-[31%] border-2 h-[400px] bg-white shadow-lg rounded-lg'>
 
                     <div className='text-lg text-[#6c808a] mb-2'>
                         <div className='flex justify-center items-center pt-9'>
@@ -41,7 +41,7 @@ function Services_about() {
 
                 </div>
 
-                <div className='w-[31%] border-2 h-[400px] bg-white shadow-lg rounded-lg'>
+                <div className='w-[100%] md:w-[44%] lg:w-[31%] border-2 h-[400px] bg-white shadow-lg rounded-lg'>
 
                     <div className='text-lg text-[#6c808a] mb-2'>
                         <div className='flex justify-center items-center pt-9'>
@@ -62,7 +62,7 @@ function Services_about() {
 
 
                 </div>
-                <div className='w-[31%] border-2 h-[400px] bg-white shadow-lg rounded-lg'>
+                <div className='w-[100%] md:w-[44%] lg:w-[31%] border-2 h-[400px] bg-white shadow-lg rounded-lg'>
 
                     <div className='text-lg text-[#6c808a] mb-2'>
                         <div className='flex justify-center items-center pt-9'>
