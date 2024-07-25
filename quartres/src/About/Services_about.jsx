@@ -13,8 +13,8 @@ function Services_about() {
         <section className='bg-[#f2f6f7] pt-[110px]  px-[50px]'>
             <div className='w-full flex justify-center items-center'>
                 <div>
-                    <h6 className='border rounded-[50px] w-fit px-5 bg-orange-100 mb-8 text-[red] ml-[120px]'> Our Services</h6>
-                    <h1 className='text-[50px] font-bold mb-9'> Our Main Focus</h1>
+                    <h6 className='border rounded-[50px] w-fit mx-auto px-5 bg-orange-100 mb-8 text-[red]'> Our Services</h6>
+                    <h1 className='text-2xl lg:text-[50px] font-bold mb-9'> Our Main Focus</h1>
                 </div>
             </div>
 

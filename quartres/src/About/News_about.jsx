@@ -12,8 +12,8 @@ function News_about() {
         <section className='bg-[#f8f8fc] py-[110px]  px-[50px]'>
             <div className='w-full flex justify-center items-center'>
                 <div>
-                    <h6 className='border rounded-[50px] w-fit px-5 bg-orange-100 mb-8 text-[red] ml-[150px]'> News & Blogs</h6>
-                    <h1 className='text-[50px] font-bold mb-9'> Latest News Feeds</h1>
+                    <h6 className='border rounded-[50px] w-fit mx-auto px-5 bg-orange-100 mb-8 text-[red]'> News & Blogs</h6>
+                    <h1 className='text-2xl lg:text-[50px] font-bold mb-9'> Latest News Feeds</h1>
                 </div>
             </div>
 

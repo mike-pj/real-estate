@@ -20,12 +20,12 @@ function Properties_hm() {
         <section className='bg-[white] py-[110px] px-6 lg:px-[50px]'>
             <div className='w-full flex justify-center items-center'>
                 <div>
-                    <h6 className='border rounded-[50px] w-fit px-5 bg-orange-100 mb-8 text-[red] ml-[150px]'> Properties</h6>
-                    <h1 className='text-[50px] font-bold mb-9'> Featured Listings</h1>
+                    <h6 className='border rounded-[50px] w-fit mx-auto px-5 bg-orange-100 mb-8 text-[red]'> Properties</h6>
+                    <h1 className='text-2xl lg:text-[50px] font-bold mb-9'> Featured Listings</h1>
                 </div>
             </div>
 
-            <div className='flex flex-wrap justify-center gap-7 mb-[90px]'>
+            <div className='flex flex-wrap justify-center gap-7 lg:mb-[90px]'>
                 <div className='relative group w-full md:w-[42%] lg:w-[30%] h-fit bg-white shadow-lg rounded-lg'>
 
                     <Link className='block' to="">

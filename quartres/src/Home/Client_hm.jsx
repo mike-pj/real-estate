@@ -10,8 +10,8 @@ function Client_hm() {
         <section className='bg-[#f8f8fc] pt-[110px] px-2 lg:px-[50px]'>
             <div className='w-full flex justify-center items-center'>
                 <div>
-                    <h6 className='border rounded-[50px] w-fit px-5 bg-orange-100 mb-8 text-[red] ml-[120px]'> Our Testimonial</h6>
-                    <h1 className='text-[50px] font-bold mb-9'> Clients Feedback</h1>
+                    <h6 className='border rounded-[50px] w-fit mx-auto px-5 bg-orange-100 mb-8 text-[red]'> Our Testimonial</h6>
+                    <h1 className='text-2xl lg:text-[50px] font-bold mb-9'> Clients Feedback</h1>
                 </div>
             </div>
 

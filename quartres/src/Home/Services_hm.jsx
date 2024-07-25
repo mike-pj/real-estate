@@ -13,13 +13,13 @@ function Services_hm() {
         <section className='bg-[#f2f6f7] pt-[110px]  px-[50px]'>
             <div className='w-full flex justify-center items-center'>
                 <div>
-                    <h6 className='border rounded-[50px] w-fit px-5 bg-orange-100 mb-8 text-[red] ml-[120px]'> Our Services</h6>
-                    <h1 className='text-[50px] font-bold mb-9'> Our Main Focus</h1>
+                    <h6 className='border rounded-[50px] w-fit mx-auto px-5 bg-orange-100 mb-8 text-[red]'> Our Services</h6>
+                    <h1 className='text-2xl lg:text-[50px] font-bold mb-9'> Our Main Focus</h1>
                 </div>
             </div>
 
-            <div className='flex justify-center gap-7 pb-[120px]'>
-                <div className='w-[31%] border-2 h-[400px] bg-white shadow-lg rounded-lg'>
+            <div className='flex gap-y-6 flex-wrap justify-between pb-[120px]'>
+                <div className='w-[100%] md:w-[44%] lg:w-[31%] border-2 h-[400px] bg-white shadow-lg rounded-lg'>
 
                     <div className='text-lg text-[#6c808a] mb-2'>
                         <div className='flex justify-center items-center pt-9'>
@@ -41,7 +41,7 @@ function Services_hm() {
 
                 </div>
 
-                <div className='w-[31%] border-2 h-[400px] bg-white shadow-lg rounded-lg'>
+                <div className='w-[100%] md:w-[44%] lg:w-[31%] border-2 h-[400px] bg-white shadow-lg rounded-lg'>
 
                     <div className='text-lg text-[#6c808a] mb-2'>
                         <div className='flex justify-center items-center pt-9'>
@@ -62,7 +62,7 @@ function Services_hm() {
 
 
                 </div>
-                <div className='w-[31%] border-2 h-[400px] bg-white shadow-lg rounded-lg'>
+                <div className='w-[100%] md:w-[44%] lg:w-[31%] border-2 h-[400px] bg-white shadow-lg rounded-lg'>
 
                     <div className='text-lg text-[#6c808a] mb-2'>
                         <div className='flex justify-center items-center pt-9'>

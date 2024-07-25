@@ -34,8 +34,8 @@ function Contact_us() {
 
     return (
         <section>
-            <div className="w-full h-[200vh]">
-                <div className="flex justify-center items-center gap-3 py-[140px] px-[60px]">
+            <div className="w-full h-full">
+                <div className="flex flex-wrap justify-center gap-y-6 gap-x-3 py-[140px] px-[60px]">
                     <div className="w-[400px] border-2 py-[50px] px-5">
                         <div className="flex justify-center items-center">
                             <img src={Mail} alt="mail" className="mb-7" />
@@ -78,43 +78,43 @@ function Contact_us() {
                     </div>
                 </div>
 
-                <div className="w-[1230px] border-2 mx-auto">
-                    <div className="mt-9 mb-9 ml-[96px] border-l-2 border-red-600 px-2">
-                        <h1 className="text-2xl font-bold h-9 ">Get A Quote</h1>
+                <div className="w-[76%] lg:w-[1230px] border-2 mx-auto mb-[150px]">
+                    <div className="mt-9 mb-9 ml-5 lg:ml-[96px] border-l-2 border-red-600 px-2">
+                        <h1 className="text-xl text-left lg:text-2xl font-bold h-9 ">Get A Quote</h1>
                     </div>
 
-                    <div className="flex flex-wrap justify-center items-center gap-9 mb-11">
+                    <div className="lg:flex flex-wrap justify-center items-center gap-9 mb-11">
                         <div>
-                            <div className="relative">
+                            <div className="relative mb-5">
                                 <input
                                     type="text"
                                     name=""
                                     id=""
                                     placeholder="Enter your name"
-                                    className="w-[500px] block border-2 border-gray-300 px-3 py-5"
+                                    className="w-[90%] mx-auto lg:w-[500px] block border-2 border-gray-300 px-3 py-5"
                                 />
-                                <i className="absolute top-1/2 -translate-y-1/2 right-0 mx-4 text-red-500">
+                                <i className="absolute top-1/2 -translate-y-1/2 right-0 mx-8 text-red-500">
                                     <FaUser />
                                 </i>
                             </div>
                         </div>
 
                         <div>
-                            <div className="relative">
+                            <div className="relative mb-5">
                                 <input
                                     type="text"
                                     name=""
                                     id=""
                                     placeholder="Enter email address"
-                                    className="w-[500px] block border-2 border-gray-300 px-3 py-5"
+                                    className="w-[90%] mx-auto lg:w-[500px] block border-2 border-gray-300 px-3 py-5"
                                 />
-                                <i className="absolute top-1/2 -translate-y-1/2 right-0 mx-4 text-red-500">
+                                <i className="absolute top-1/2 -translate-y-1/2 right-0 mx-8 text-red-500">
                                     <MdEmail />
                                 </i>
                             </div>
                         </div>
 
-                        <div className="relative cursor-pointer">
+                        <div className="relative cursor-pointer mb-5">
                             <div >
                                 <input
                                     onClick={toggling}
@@ -122,9 +122,9 @@ function Contact_us() {
                                     name=""
                                     id=""
                                     placeholder={selectedOption || "Select Service Type"}
-                                    className="w-[500px] cursor-pointer block border-2 border-gray-300 px-3 py-5"
+                                    className="w-[90%] mx-auto lg:w-[500px] cursor-pointer block border-2 border-gray-300 px-3 py-5"
                                 />
-                                <i className="absolute top-1/2 -translate-y-1/2 right-0 mx-4 text-red-500">
+                                <i className="absolute top-1/2 -translate-y-1/2 right-0 mx-8 text-red-500">
                                     <FaArrowDown />
                                 </i>
                                 {isOpen && (
@@ -146,37 +146,37 @@ function Contact_us() {
                         </div>
 
                         <div>
-                            <div className="relative">
+                            <div className="relative mb-5">
                                 <input
                                     type="text"
                                     name=""
                                     id=""
                                     placeholder="Enter your phone number"
-                                    className="w-[500px] block border-2 border-gray-300 px-3 py-5"
+                                    className="w-[90%] mx-auto lg:w-[500px] block border-2 border-gray-300 px-3 py-5"
                                 />
-                                <i className="absolute top-1/2 -translate-y-1/2 right-0 mx-4  text-red-500">
+                                <i className="absolute top-1/2 -translate-y-1/2 right-0 mx-8  text-red-500">
                                     <FaPhoneAlt />
                                 </i>
                             </div>
                         </div>
 
                         <div>
-                            <div className="relative">
+                            <div className="relative mb-5">
                                 <textarea
                                     type="message"
                                     name=""
                                     id=""
                                     placeholder="Enter message"
-                                    className="w-[1037px] h-[20svh] block border-2 border-gray-300 px-3 py-3"
+                                    className="w-[90%] mx-auto lg:w-[1037px] h-[20svh] block border-2 border-gray-300 px-3 py-3"
                                 />
-                                <i className="absolute top-1/2 -translate-y-[63px] right-0 mx-4 text-red-500">
+                                <i className="absolute top-1/2 -translate-y-[63px] right-0 mx-8 text-red-500">
                                     <FaPencil />
                                 </i>
                             </div>
                         </div>
                     </div>
 
-                    <div className="text-[#9a9ea1] mx-[95px] space-x-3 mb-6">
+                    <div className="text-[#9a9ea1] mx-5 lg:mx-[95px] space-x-3 mb-6">
                         <input type="checkbox" id="save" className="" />
                         <label htmlFor="save">
                             Save my name, email, and website in this browser for the next time
@@ -184,11 +184,11 @@ function Contact_us() {
                         </label>
                     </div>
 
-                    <button className="bg-orange-500 w-[200px] h-[60px] ml-[95px] mb-5 px-4 text-white hover:bg-black"
+                    <button className="lg:w-[200px] h-[60px] ml-5 lg:ml-[95px] bg-orange-500 mb-5 px-4 text-white hover:bg-black"
                     >
                         GET A FREE SERVICE
                     </button>
-                    <p className="ml-[95px] text-[#9a9ea1] mb-[80px]">Please complete the form and try again.</p>
+                    <p className="ml-5 lg:ml-[95px] text-[#9a9ea1] mb-[80px]">Please complete the form and try again.</p>
                 </div>
             </div>
         </section>

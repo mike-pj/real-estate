@@ -11,7 +11,7 @@ function OurAmenities_hm() {
     <section className='bg-[#ffffff] #fff py-[110px] px-[20px] md:px-[50px]'>
         <div className='w-full flex justify-center items-center'>
             <div>
-                <h6 className='border rounded-[50px] w-fit p-2 bg-orange-100 mb-8 text-[red] m-auto'> Our Aminities</h6>
+                <h6 className='border rounded-[50px] w-fit mx-auto p-2 bg-orange-100 mb-8 text-[red]'> Our Aminities</h6>
                 <h1 className='text-2xl md:text-4xl lg:text-[50px] font-bold mb-9'> Building Aminities</h1>
             </div>
         </div>
