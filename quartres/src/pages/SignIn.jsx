@@ -66,21 +66,21 @@ function SignIn() {
             </div>
 
             <div className='bg-white px-[60px] py-[120px]'>
-                <div className='flex flex-col justify-center items-center'>
-                    <h1 className='lg:text-5xl font-bold tracking-wider mb-10'>
-                        <span className='ml-[120px] mb-8'>Sign In</span>
+                <div className='text-center flex flex-col justify-center items-center'>
+                    <h1 className='text-center lg:text-5xl font-bold tracking-wider mb-10'>
+                        <span className='ml-[]lg:ml-[120px] mb-8'>Sign In</span>
                         <br />
                         <span className=''>To Your Account</span>
                     </h1>
 
-                        <p className='w-[30%] text-[#7b888b] mb-[90px]'>
-                            Lorem ipsum dolor sit amet consectetur adipisicing. <span className='ml-[40px]'>Ipsa quisquam doloribus autem sapiente</span>
+                        <p className='lg:w-[30%] text-[#7b888b] mb-[90px]'>
+                            Lorem ipsum dolor sit amet consectetur adipisicing. <span className=''>Ipsa quisquam doloribus autem sapiente</span>
                         </p>
                     
                 </div>
 
-                <div className='flex justify-center items-center mb-[80px]'>
-                    <div className='w-1/2 flex justify-center items-center'>
+                <div className='flex flex-col lg:flex-row justify-center items-center mb-[80px]'>
+                    <div className='mb-[120px] lg:mb-[-50px] lg:w-1/2 flex justify-center items-center'>
                         <form onSubmit={handleSubmit} action=''>
                             <div>
                                 <input
