@@ -4,14 +4,23 @@ import dotenv from 'dotenv';
 dotenv.config();
 import userRoutes from './routes/userRoute.js'
 import authRoutes from './routes/authRoute.js'
+import path from 'path';
 
 mongoose.connect(process.env.MONGO_URL).then(()=>{
     console.log("Database connected successfully");
 }).catch((err)=> {
     console.log(err);
-})
+});
+
+const __dirname = path.resolve();
 
 const app = express();
+
+app.use(express.static(path.join(__dirname, '/quartres/dist')));
+
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, 'quartres', 'dist', 'index.html'));
+});
 
 app.use(express.json());
 
