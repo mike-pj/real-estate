@@ -40,13 +40,13 @@ function Contact_us() {
                         <div className="flex justify-center items-center">
                             <img src={Mail} alt="mail" className="mb-7" />
                         </div>
-                        <h1 className="text-2xl font-bold ml-[90px] tracking-wide mb-4">
+                        <h1 className="text-2xl font-bold text-center tracking-wide mb-4">
                             Email Address
                         </h1>
-                        <p className="text-small text-[#9a9ea1] ml-[110px] mb-4">
+                        <p className="text-small text-[#9a9ea1] text-center mb-4">
                             info@webmail.com
                         </p>
-                        <p className="text-small text-[#9a9ea1] ml-[90px]">
+                        <p className="text-small text-[#9a9ea1] text-center">
                             jobs@webexample.com
                         </p>
                     </div>
@@ -55,26 +55,26 @@ function Contact_us() {
                         <div className="flex justify-center items-center">
                             <img src={Telephone} alt="mail" className="mb-7" />
                         </div>
-                        <h1 className="text-2xl font-bold ml-[90px] tracking-wide mb-4">
+                        <h1 className="text-2xl font-bold text-center tracking-wide mb-4">
                             Phone Number
                         </h1>
-                        <p className="text-small text-[#9a9ea1] ml-[110px] mb-4">
+                        <p className="text-small text-[#9a9ea1] text-center  mb-4">
                             +0123-456789
                         </p>
-                        <p className="text-small text-[#9a9ea1] ml-[110px]">+987-6543210</p>
+                        <p className="text-small text-[#9a9ea1] text-center">+987-6543210</p>
                     </div>
 
                     <div className="w-[400px] border-2 py-[50px] px-5">
                         <div className="flex justify-center items-center">
                             <img src={Location} alt="mail" className="mb-7" />
                         </div>
-                        <h1 className="text-2xl font-bold ml-[90px] tracking-wide mb-4">
-                            Email Address
+                        <h1 className="text-2xl font-bold text-center tracking-wide mb-4">
+                            Location
                         </h1>
-                        <p className="text-small text-[#9a9ea1] ml-[80px] mb-4">
+                        <p className="text-small text-[#9a9ea1] text-center mb-4">
                             18/A, New Born Town Hall
                         </p>
-                        <p className="text-small text-[#9a9ea1] ml-[130px]">New York, US</p>
+                        <p className="text-small text-[#9a9ea1] text-center ">New York, US</p>
                     </div>
                 </div>
 
@@ -169,7 +169,7 @@ function Contact_us() {
                                     placeholder="Enter message"
                                     className="w-[90%] mx-auto lg:w-[1037px] h-[20svh] block border-2 border-gray-300 px-3 py-3"
                                 />
-                                <i className="absolute top-1/2 -translate-y-[63px] right-0 mx-8 text-red-500">
+                                <i className="absolute top-1/2 -translate-y-10 xl:-translate-y-[63px] right-0 mx-8 text-red-500">
                                     <FaPencil />
                                 </i>
                             </div>

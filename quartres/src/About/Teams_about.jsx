@@ -21,7 +21,7 @@ function Teams_about() {
                     <img src={img05} alt="stairs" />
                     <div className='flex justify-center items-center px-8 py-8'>
                         <div className='w-fit mx-auto'>
-                            <h1 className='mb-5 font-bold tracking-normal text-2xl lg:text-4xl'>Rosalina D. William</h1>
+                            <h1 className='mb-5 font-bold tracking-normal text-2xl lg:text-3xl'>Rosalina D. William</h1>
                             <p className='mb-5 font-bold text-red-500 text-xl ml-5 lg:text-2xl'>Real Estate Broker</p>
                             <div className='flex items-center gap-7 ml-9 text-[#5c727d]'>
                                 <i className='cursor-pointer hover:text-red-500'><FaFacebookF /></i>
@@ -36,7 +36,7 @@ function Teams_about() {
                     <img src={img06} alt="stairs" />
                     <div className='flex justify-center items-center px-8 py-8'>
                         <div className='w-fit mx-auto'>
-                            <h1 className='mb-5 font-bold tracking-normal text-2xl lg:text-4xl'>Kelian Anderson</h1>
+                            <h1 className='mb-5 font-bold tracking-normal text-2xl lg:text-3xl'>Kelian Anderson</h1>
                             <p className='mb-5 font-bold text-red-500 text-xl ml-5 lg:text-2xl'>
                                 Selling Agents
                             </p>
@@ -53,7 +53,7 @@ function Teams_about() {
                     <img src={img07} alt="stairs" />
                     <div className='flex justify-center items-center px-8 py-8'>
                         <div className='w-fit mx-auto'>
-                            <h1 className='mb-5 font-bold tracking-normal text-2xl lg:text-4xl'>Miranda H. Halim</h1>
+                            <h1 className='mb-5 font-bold tracking-normal text-2xl lg:text-3xl'>Miranda H. Halim</h1>
                             <p className='mb-5 font-bold text-red-500 text-xl ml-5 lg:text-2xl'>Property Seller</p>
                             <div className='flex items-center gap-7 ml-9 text-[#5c727d]'>
                                 <i className='cursor-pointer hover:text-red-500'><FaFacebookF /></i>

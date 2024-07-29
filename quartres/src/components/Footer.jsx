@@ -45,7 +45,7 @@ function Footer() {
                         <p className='mb-5'>
                             Lorem ipsum dolor sit amet consectetur. Corrupti doloribus natus unde quis!
                         </p>
-                        <p className='flex items-center gap-3 mb-4'><i className='mt-[-25px]'><CiLocationOn /></i> Brooklyn, New York, United States</p>
+                        <p className='flex items-center gap-3 mb-4'><i className=''><CiLocationOn /></i> Brooklyn, New York, United States</p>
                         <div className='flex items-center gap-3 mb-4'>
                             <i><LuPhoneCall /></i>
                             <p className='cursor-pointer hover:text-orange-600'> +0123-456789</p>

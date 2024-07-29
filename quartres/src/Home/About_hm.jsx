@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom'
 
 function About_hm() {
   return (
-    <section className='bg-zinc-50'>
+    <section className='bg-zinc-50 w-full'>
         <div className="flex flex-col lg:flex-row px-3 lg:pl-12 lg:pr-7 justify-between py-14">
             <div className="relative h-[600px] border">
                 <img src={About} alt="" className='h-full w-full'/>

@@ -15,7 +15,7 @@ import Apartments_hm from '../Home/Apartments_hm'
 
 function Home() {
   return (
-    <section>
+    <section className=''>
       <img src={background} alt="" className='w-full h-[270svh] fixed z-[-1] left-0 top-0 brightness-75' />
       <Top />
       <Select />

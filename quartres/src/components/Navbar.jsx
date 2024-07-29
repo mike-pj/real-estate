@@ -71,7 +71,7 @@ function Navbar() {
                     <div className='relative hover:text-white'>
                         {!isOpen ?
                             (
-                                <button onClick={toggling} className='bg-white h-[50px] w-[50px] shadow-2xl flex items-center justify-center hover:bg-orange-500 hover:text-white'>
+                                <button className='bg-white h-[50px] w-[50px] shadow-2xl flex items-center justify-center hover:bg-orange-500 hover:text-white'>
                                     <FaCartShopping />
                                     <div className='absolute top-1/2 -translate-y-6 right-1 cursor-pointer hover:bg-orange-500'>2</div>
                                 </button>
