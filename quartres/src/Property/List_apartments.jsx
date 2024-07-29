@@ -108,7 +108,7 @@ function List_apartments() {
                         </div>
                     </div>
                     {isOpen && (
-                        <div className="absolute w-[290px] top-7 right-0 z-20 mt-5 origin-top-right border bg-white ">
+                        <div className="absolute w-[210px] lg:w-[290px] top-7 lg:right-0 z-20 mt-5 origin-top-right border bg-white ">
                             {options.map((option) => (
                                 <button
                                     type="button"
@@ -134,7 +134,7 @@ function List_apartments() {
                         </div>
                     </div>
                     {isOpens && (
-                        <div className="absolute w-[290px] top-7 right-0 z-20 mt-5 origin-top-right border bg-white ">
+                        <div className="absolute w-[210px] lg:w-[290px] top-7 lg:right-0 z-20 mt-5 origin-top-right border bg-white ">
                             {items.map((item) => (
                                 <button
                                     type="button"
