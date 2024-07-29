@@ -169,7 +169,7 @@ function Contact_us() {
                                     placeholder="Enter message"
                                     className="w-[90%] mx-auto lg:w-[1037px] h-[20svh] block border-2 border-gray-300 px-3 py-3"
                                 />
-                                <i className="absolute top-1/2 -translate-y-10 xl:-translate-y-[63px] right-0 mx-8 text-red-500">
+                                <i className="absolute top-1/2 -translate-y-12 xl:-translate-y-[63px] right-0 mx-8 text-red-500">
                                     <FaPencil />
                                 </i>
                             </div>
