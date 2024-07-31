@@ -16,7 +16,7 @@ function Teams_about() {
                 </div>
             </div>
 
-            <div className='flex flex-wrap gap-y-5 justify-between items-center px-[95px]'>
+            <div className='flex flex-wrap gap-y-5 justify-between items-center px-3 lg:px-[95px]'>
                 <div className='w-full md:w-[44%] lg:w-[30%] border-2 h-fit bg-white hover:shadow-lg rounded-lg'>
                     <img src={img05} alt="stairs" />
                     <div className='flex justify-center items-center px-8 py-8'>

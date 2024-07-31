@@ -89,7 +89,7 @@ function SignIn() {
                                     id="email"
                                     placeholder=" Email*"
                                     value={formData.email}
-                                    className='p-2 border-2 border-[#e6e3e3] bg-white block w-[400px] h-[60px] mt-2 mb-9'
+                                    className='p-2 border-2 border-[#e6e3e3] bg-white block w-[350px] mx-auto lg:w-[400px] h-[60px] mt-2 mb-9'
                                     onChange={updateForm}
                                 />
                             </div>
@@ -101,7 +101,7 @@ function SignIn() {
                                     id="password"
                                     placeholder=" Password*"
                                     value={formData.password}
-                                    className='p-2 border-2 border-[#e6e3e3] bg-white block w-[400px] h-[60px] mt-2 mb-9'
+                                    className='p-2 border-2 border-[#e6e3e3] bg-white block w-[350px] mx-auto  lg:w-[400px] h-[60px] mt-2 mb-9'
                                     onChange={updateForm}
                                 />
                             </div>
@@ -121,17 +121,17 @@ function SignIn() {
 
                     <div className='w-1/2 flex justify-center items-center -mt-16'>
                         <div>
-                            <h1 className='lg:text-xl font-bold ml-[90px] mb-5'>
+                            <h1 className='lg:text-xl font-bold ml-11 lg:ml-[90px] mb-5'>
                                 DON'T HAVE AN ACCOUNT?
                             </h1>
-                            <p className='w-[450px] text-[#7b888b] mb-1'>
-                                Add items to your wishlist get personalised recommendations
+                            <p className='w-[320px] lg:w-[450px] text-[#7b888b] mb-1'>
+                                Add items to your wishlist  get personalised recommendations
                             </p>
-                            <p className='ml-9 text-[#7b888b] mb-7'>
-                                check out more quickly track your orders register
+                            <p className='lg:ml-9 text-[#7b888b] mb-7'>
+                                Check out more and quickly track your orders register
                             </p>
                             <Link to='/Register'>
-                                <button className='bg-orange-500 w-[200px] h-[60px] ml-[130px] px-4 text-white hover:bg-black'>
+                                <button className='bg-orange-500 ml-16 lg:w-[200px] h-[60px] lg:ml-[130px] px-4 text-white hover:bg-black'>
                                     CREATE ACCOUNT
                                 </button>
                             </Link>

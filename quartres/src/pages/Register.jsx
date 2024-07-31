@@ -87,7 +87,7 @@ function Register() {
                 <div className='flex justify-center items-center mb-[80px]'>
                     <div className='w-full flex justify-center items-center'>
                         <form onSubmit={handleSubmit} action="">
-                            <div >
+                            <div>
                                 <div className='w-full ml-[30px] lg:ml-[1px]'>
                                     <input
                                         type="text"
@@ -95,7 +95,7 @@ function Register() {
                                         id="firstname"
                                         placeholder="First Name"
                                         value={formData.name}
-                                        className='p-2 border-2 border-[#e6e3e3] bg-white block w-[80%] lg:w-[400px] h-[60px] mt-2 mb-9'
+                                        className='p-2 border-2 border-[#e6e3e3] bg-white block w-[350px] -ml-8 lg:w-[400px] h-[60px] mt-2 mb-9'
                                         onChange={updateForm}
 
                                     />
@@ -108,7 +108,7 @@ function Register() {
                                         id="lastname"
                                         placeholder="Last Name"
                                         value={formData.name}
-                                        className='p-2 border-2 border-[#e6e3e3] bg-white block w-[80%] lg:w-[400px] h-[60px] mt-2 mb-9'
+                                        className='p-2 border-2 border-[#e6e3e3] bg-white block w-[350px] -ml-8 lg:w-[400px] h-[60px] mt-2 mb-9'
                                         onChange={updateForm}
                                     />
                                 </div>
@@ -120,7 +120,7 @@ function Register() {
                                         id="useremail"
                                         placeholder=" Email*"
                                         value={formData.email}
-                                        className='p-2 border-2 border-[#e6e3e3] bg-white block w-[80%] lg:w-[400px] h-[60px] mt-2 mb-9'
+                                        className='p-2 border-2 border-[#e6e3e3] bg-white block w-[350px] -ml-8 lg:w-[400px] h-[60px] mt-2 mb-9'
                                         onChange={updateForm}
                                     />
                                 </div>
@@ -132,7 +132,7 @@ function Register() {
                                         id="userpassword"
                                         placeholder=" Password*"
                                         value={formData.password}
-                                        className='p-2 border-2 border-[#e6e3e3] bg-white block w-[80%] lg:w-[400px] h-[60px] mt-2 mb-9'
+                                        className='p-2 border-2 border-[#e6e3e3] bg-white block w-[350px] -ml-8 lg:w-[400px] h-[60px] mt-2 mb-9'
                                         onChange={updateForm}
                                     />
                                 </div>
@@ -144,26 +144,26 @@ function Register() {
                                         id="confirmpassword"
                                         placeholder="Confirm Password*"
                                         value={formData.confirmpassword}
-                                        className='p-2 border-2 border-[#e6e3e3] bg-white block w-[80%] lg:w-[400px] h-[60px] mt-2 mb-9'
+                                        className='p-2 border-2 border-[#e6e3e3] bg-white block w-[350px] -ml-8 lg:w-[400px] h-[60px] mt-2 mb-9'
                                         onChange={updateForm}
                                     />
                                 </div>
 
-                                <div className='ml-[30px] lg:ml-[1px] w-[78%] lg:w-[400px] text-[#7b888b] text-sm mb-5'>
+                                <div className='xl:ml-[-30px] lg:w-[78%] xl:w-[400px] text-[#7b888b] text-sm mb-5'>
                                     <input type="checkbox" name="accept" checked={formData.accept} onChange={updateForm} id="" />
                                     <label htmlFor='' className='ml-1'>
                                         I consent to Herboil processing my personal data in order to send personalized marketing material in accordance with the consent form and the privacy policy.
                                     </label>
                                 </div>
 
-                                <div className='w-[80%] ml-[30px] lg:ml-[1px] lg:w-[400px] text-[#7b888b] text-sm mb-8'>
+                                <div className='lg:w-[80%] xl:ml-[-30px] xl:w-[400px] text-[#7b888b] text-sm mb-8'>
                                     <input type="checkbox" name="accept" checked={formData.accept} onChange={updateForm} id="" />
                                     <label htmlFor='' className='ml-1'>
                                         By clicking "create account", I consent to the privacy policy.
                                     </label>
                                 </div>
 
-                                <div className='w-full ml-[-105px] lg:-ml-[130px]'>
+                                <div className='w-full ml-[-60px] lg:ml-[-160px]'>
                                     <button disabled={loading} className='bg-orange-500 w-[200px] h-[60px] ml-[130px] px-4 text-white hover:bg-black'>
                                         {loading ? "loading..." : "CREATE ACCOUNT"}
                                     </button>

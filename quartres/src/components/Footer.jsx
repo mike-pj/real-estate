@@ -159,9 +159,9 @@ function Footer() {
                 </div>
             </div>
 
-            <div className='flex justify-between items-centerh-[20px] w-full bg-gray-700 px-8 py-6 text-white'>
+            <div className='flex flex-col lg:flex-row justify-between items-center w-full bg-gray-700 px-8 py-6 text-white'>
                 <p>All Rights Reserved @ Company 2024</p>
-                <ul className='flex items-center gap-8'>
+                <ul className='flex flex-col lg:flex-row items-center gap-3'>
                     <li className='hover:text-orange-600 cursor-pointer'>
                         <Link to="">Terms & Conditions </Link>
                     </li>

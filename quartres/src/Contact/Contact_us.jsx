@@ -35,7 +35,7 @@ function Contact_us() {
     return (
         <section>
             <div className="w-full h-full">
-                <div className="flex flex-wrap justify-center gap-y-6 gap-x-3 py-[140px] px-[60px]">
+                <div className="flex flex-wrap justify-center gap-y-6 gap-x-3 py-[140px] px-5 lg:px-[60px]">
                     <div className="w-[400px] border-2 py-[50px] px-5">
                         <div className="flex justify-center items-center">
                             <img src={Mail} alt="mail" className="mb-7" />
@@ -78,7 +78,7 @@ function Contact_us() {
                     </div>
                 </div>
 
-                <div className="w-[76%] lg:w-[1230px] border-2 mx-auto mb-[150px]">
+                <div className="w-[90%] lg:w-[1230px] border-2 mx-auto mb-[150px]">
                     <div className="mt-9 mb-9 ml-5 lg:ml-[96px] border-l-2 border-red-600 px-2">
                         <h1 className="text-xl text-left lg:text-2xl font-bold h-9 ">Get A Quote</h1>
                     </div>

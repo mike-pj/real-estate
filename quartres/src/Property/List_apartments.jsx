@@ -63,7 +63,7 @@ function List_apartments() {
     }
 
     return (
-        <section className="bg-[white] py-[110px]  px-[50px]">
+        <section className="bg-[white] py-[110px] px-4 lg:px-[50px]">
             <div className="flex items-center">
                 <i className="text-[40px] hover:text-red-600 cursor-pointer -mt-10">
                     <RiLayoutGridLine />
@@ -97,7 +97,7 @@ function List_apartments() {
 
             </div>
 
-            <div className="flex gap-4">
+            <div className="flex gap-2">
                 <div className="relative w-[290px] font-normal h-[100px] text-[#909293]">
                     <div className="bg-white px-3 py-3 rounded-md border-2 cursor-pointer">
                         <div type="button" onClick={toggling}>
@@ -108,14 +108,14 @@ function List_apartments() {
                         </div>
                     </div>
                     {isOpen && (
-                        <div className="absolute w-[210px] lg:w-[290px] top-7 lg:right-0 z-20 mt-5 origin-top-right border bg-white ">
+                        <div className="absolute w-[210px] lg:w-[290px] top-7 lg:right-0 z-20 mt-6 lg:mt-5 origin-top-right border bg-white ">
                             {options.map((option) => (
                                 <button
                                     type="button"
                                     onClick={onOptionClicked(option)}
                                     key={Math.random()}
                                 >
-                                    <div className="w-[289px] text-start block px-2 py-3 text-normal text-[#909293] hover:bg-gray-200">
+                                    <div className="w-[289px] text-start block px-2 py-3 text-normal text-[#909293] hover:bg-gray-200 lg:hover:bg-gray-200">
                                         {option}
                                     </div>
                                 </button>
@@ -134,14 +134,14 @@ function List_apartments() {
                         </div>
                     </div>
                     {isOpens && (
-                        <div className="absolute w-[210px] lg:w-[290px] top-7 lg:right-0 z-20 mt-5 origin-top-right border bg-white ">
+                        <div className="absolute w-[165px] lg:w-[290px] top-7 lg:right-0 z-20 mt-6 lg:mt-5 origin-top-right border bg-white ">
                             {items.map((item) => (
                                 <button
                                     type="button"
                                     onClick={onItemClicked(item)}
                                     key={Math.random()}
                                 >
-                                    <div className="w-[289px] text-start block px-2 py-3 text-normal text-[#909293] hover:bg-gray-200">
+                                    <div className="w-[165px] lg:w-[290px] text-start block px-2 py-3 text-normal text-[#909293] hover:bg-gray-200 lg:hover:bg-gray-200">
                                         {item}
                                     </div>
                                 </button>
@@ -160,7 +160,7 @@ function List_apartments() {
 
 
                     {/* ***********************************check point************************** */}
-                    <div className="w-full xl:w-[70%] flex flex-wrap items-center md:items-stretch justify-between mb-[90px] gap-y-5">
+                    <div className="w-full lg:w-[70%] xl:w-[90%] flex flex-wrap items-center md:items-stretch justify-between mb-[90px] gap-y-5">
                         <div className="relative w-full md:w-[44%] group h-fit bg-white shadow-lg rounded-lg">
                             <Link to="">
                                 <div className="relative overflow-hidden">
@@ -195,7 +195,7 @@ function List_apartments() {
                                     With New Wood
                                 </p>
 
-                                <div className="flex text-[#6c808a] gap-3 mb-6">
+                                <div className="flex text-[#6c808a] gap-3 mb-6 text-sm">
                                     <div className="w-fit">
                                         <p> 3 Bedrooms</p>
                                     </div>
@@ -203,7 +203,7 @@ function List_apartments() {
                                         <p> 2 Bathrooms</p>
                                     </div>
                                     <div className="w-fit">
-                                        <p> 3450 Square Ft </p>
+                                        <p> 3450 Sq Ft </p>
                                     </div>
                                 </div>
                                 <Link to="">
@@ -264,7 +264,7 @@ function List_apartments() {
                                     With New Wood
                                 </p>
 
-                                <div className="flex text-[#6c808a] gap-3 mb-6">
+                                <div className="flex text-[#6c808a] gap-3 mb-6 text-sm">
                                     <div className="w-fit">
                                         <p> 3 Bedrooms</p>
                                     </div>
@@ -272,7 +272,7 @@ function List_apartments() {
                                         <p> 2 Bathrooms</p>
                                     </div>
                                     <div className="w-fit">
-                                        <p> 3450 Square Ft </p>
+                                        <p> 3450 Sq Ft </p>
                                     </div>
                                 </div>
                                 <Link to="">
@@ -333,7 +333,7 @@ function List_apartments() {
                                     With New Wood
                                 </p>
 
-                                <div className="flex text-[#6c808a] gap-3 mb-6">
+                                <div className="flex text-[#6c808a] gap-3 mb-6 text-sm">
                                     <div className="w-fit">
                                         <p> 3 Bedrooms</p>
                                     </div>
@@ -341,7 +341,7 @@ function List_apartments() {
                                         <p> 2 Bathrooms</p>
                                     </div>
                                     <div className="w-fit">
-                                        <p> 3450 Square Ft </p>
+                                        <p> 3450 Sq Ft </p>
                                     </div>
                                 </div>
                                 <Link to="">
@@ -406,7 +406,7 @@ function List_apartments() {
                                     With New Wood
                                 </p>
 
-                                <div className="flex text-[#6c808a] gap-3 mb-6">
+                                <div className="flex text-[#6c808a] gap-3 mb-6 text-sm">
                                     <div className="w-fit">
                                         <p> 3 Bedrooms</p>
                                     </div>
@@ -414,7 +414,7 @@ function List_apartments() {
                                         <p> 2 Bathrooms</p>
                                     </div>
                                     <div className="w-fit">
-                                        <p> 3450 Square Ft </p>
+                                        <p> 3450 Sq Ft </p>
                                     </div>
                                 </div>
                                 <Link to="">
@@ -475,7 +475,7 @@ function List_apartments() {
                                     With New Wood
                                 </p>
 
-                                <div className="flex text-[#6c808a] gap-3 mb-6">
+                                <div className="flex text-[#6c808a] gap-3 mb-6 text-sm">
                                     <div className="w-fit">
                                         <p> 3 Bedrooms</p>
                                     </div>
@@ -483,7 +483,7 @@ function List_apartments() {
                                         <p> 2 Bathrooms</p>
                                     </div>
                                     <div className="w-fit">
-                                        <p> 3450 Square Ft </p>
+                                        <p> 3450 Sq Ft </p>
                                     </div>
                                 </div>
                                 <Link to="">
@@ -544,7 +544,7 @@ function List_apartments() {
                                     With New Wood
                                 </p>
 
-                                <div className="flex text-[#6c808a] gap-3 mb-6">
+                                <div className="flex text-[#6c808a] gap-3 mb-6 text-sm">
                                     <div className="w-fit">
                                         <p> 3 Bedrooms</p>
                                     </div>
@@ -552,7 +552,7 @@ function List_apartments() {
                                         <p> 2 Bathrooms</p>
                                     </div>
                                     <div className="w-fit">
-                                        <p> 3450 Square Ft </p>
+                                        <p> 3450 Sq Ft </p>
                                     </div>
                                 </div>
                                 <Link to="">
@@ -584,7 +584,7 @@ function List_apartments() {
                 {/* ***********************************check point*********************************** */}
 
 
-                <div className="xl:w-[30%]">
+                <div className="lg:w-[30%] xl:w-[90%]">
                     <h1 className="text-2xl font-bold mb-4">Advance Information</h1>
                     <p className="mb-7 text-[#909293]">About 9,620 results (0.62 seconds)</p>
                     <div className=" text-[#909293] border-2 px-8 py-8">
