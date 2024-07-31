@@ -181,7 +181,7 @@ function Register() {
                                         </Link>
 
                                         <Link to='/login'>
-                                            <p className='lg:ml-[70px] hover:text-orange-500'>ALREADY HAVE AN ACCOUNT ?</p>
+                                            <p className='text-center lg:ml-[70px] hover:text-orange-500'>ALREADY HAVE AN ACCOUNT ?</p>
                                         </Link>
                                     </div>
                                 </div>
