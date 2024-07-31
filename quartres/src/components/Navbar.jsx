@@ -36,15 +36,15 @@ function Navbar() {
                     <img src={logo} alt="" className='w-24 md:w-auto' />
                 </div>
                 <div className="flex items-center">
-                    <ul className={`flex absolute top-[180px] delay-300 duration-300 ease-in-out transition ${mobileNav ? 'left-1/2 -translate-x-1/2' : '-left-[100%]'} rounded-lg lg:rounded-none bg-white flex-col w-[250px] items-center py-8 lg:py-0 lg:flex-row lg:w-auto lg:h-auto lg:static gap-5 text-[18px]`}>
-                        <li>
-                            <Link to="/">Home+</Link>
+                    <ul className={`flex absolute top-[180px]  right-0 duration-1000 ease-in-out transition ${mobileNav ? 'left-1/2 -translate-x-1/2 ' : '-left-[100%]'} rounded-lg lg:rounded-none bg-white flex-col w-[250px] items-center py-8 lg:py-0 lg:flex-row lg:w-auto lg:h-auto lg:static gap-5 text-[18px]`}>
+                        <li onClick={() => setMobileNav(prev => !prev)}>
+                            <Link to="/" className=' hover:text-orange-600'>Home+</Link>
                         </li>
-                        <li>
-                            <Link to="/about">About+</Link>
+                        <li onClick={() => setMobileNav(prev => !prev)}>
+                            <Link to="/about" className=' hover:text-orange-600'>About+</Link>
                         </li>
-                        <li>
-                            <Link to="/property">Property+</Link>
+                        <li onClick={() => setMobileNav(prev => !prev)}>
+                            <Link to="/property" className=' hover:text-orange-600'>Property+</Link>
                         </li>
                         {/* <li>
                         <Link to="/news">News+</Link>
@@ -52,8 +52,8 @@ function Navbar() {
                     <li>
                         <Link to="/pages">Pages+</Link>
                     </li> */}
-                        <li>
-                            <Link to="/contact">Contact</Link>
+                        <li onClick={() => setMobileNav(prev => !prev)}>
+                            <Link to="/contact" className=' hover:text-orange-600'>Contact</Link>
                         </li>
                     </ul>
                 </div>
