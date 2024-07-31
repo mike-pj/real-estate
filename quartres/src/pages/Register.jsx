@@ -88,7 +88,7 @@ function Register() {
                     <div className='w-full flex justify-center items-center'>
                         <form onSubmit={handleSubmit} action="">
                             <div >
-                                <div className='ml-[70px] lg:ml-[1px]'>
+                                <div className='w-full ml-[30px] lg:ml-[1px]'>
                                     <input
                                         type="text"
                                         name="firstname"
@@ -101,7 +101,7 @@ function Register() {
                                     />
                                 </div>
 
-                                <div className='ml-[70px] lg:ml-[1px]'>
+                                <div className='w-full ml-[30px] lg:ml-[1px]'>
                                     <input
                                         type="text"
                                         name="lastname"
@@ -113,7 +113,7 @@ function Register() {
                                     />
                                 </div>
 
-                                <div className='ml-[70px] lg:ml-[1px]'>
+                                <div className='w-full ml-[30px] lg:ml-[1px]'>
                                     <input
                                         type="email"
                                         name="email"
@@ -125,7 +125,7 @@ function Register() {
                                     />
                                 </div>
 
-                                <div className='ml-[70px] lg:ml-[1px]'>
+                                <div className='w-full ml-[30px] lg:ml-[1px]'>
                                     <input
                                         type="password"
                                         name="password"
@@ -137,7 +137,7 @@ function Register() {
                                     />
                                 </div>
 
-                                <div className='ml-[70px] lg:ml-[1px]'>
+                                <div className='w-full ml-[30px] lg:ml-[1px]'>
                                     <input
                                         type="password"
                                         name="confirmpassword"
@@ -149,21 +149,21 @@ function Register() {
                                     />
                                 </div>
 
-                                <div className='ml-[70px] lg:ml-[1px] w-[65%] lg:w-[400px] text-[#7b888b] text-sm mb-5'>
+                                <div className='ml-[30px] lg:ml-[1px] w-[78%] lg:w-[400px] text-[#7b888b] text-sm mb-5'>
                                     <input type="checkbox" name="accept" checked={formData.accept} onChange={updateForm} id="" />
                                     <label htmlFor='' className='ml-1'>
                                         I consent to Herboil processing my personal data in order to send personalized marketing material in accordance with the consent form and the privacy policy.
                                     </label>
                                 </div>
 
-                                <div className='ml-[70px] lg:ml-[1px] w-[69%] lg:w-[400px] text-[#7b888b] text-sm mb-8'>
+                                <div className='w-[80%] ml-[30px] lg:ml-[1px] lg:w-[400px] text-[#7b888b] text-sm mb-8'>
                                     <input type="checkbox" name="accept" checked={formData.accept} onChange={updateForm} id="" />
                                     <label htmlFor='' className='ml-1'>
                                         By clicking "create account", I consent to the privacy policy.
                                     </label>
                                 </div>
 
-                                <div className='ml-[-60px] lg:-ml-[130px]'>
+                                <div className='w-full ml-[-105px] lg:-ml-[130px]'>
                                     <button disabled={loading} className='bg-orange-500 w-[200px] h-[60px] ml-[130px] px-4 text-white hover:bg-black'>
                                         {loading ? "loading..." : "CREATE ACCOUNT"}
                                     </button>
@@ -174,14 +174,14 @@ function Register() {
 
                                 <div className='flex justify-center items-center text-[#7b888b]'>
                                     <div>
-                                        <p className='mt-[50px] mb-[30px] ml-9'>By creating an account, you agree to our:</p>
+                                        <p className='mt-[50px] mb-[30px] ml-6 lg:text-center'>By creating an account, you agree to our:</p>
 
                                         <Link to='/register'>
-                                            <p className='tracking-widest mb-[60px] hover:text-orange-500'>TERMS OF CONDITIONS     |     PRIVACY POLICY</p>
+                                            <p className='text-center tracking-widest mb-[60px] hover:text-orange-500'>TERMS OF CONDITIONS     |     PRIVACY POLICY</p>
                                         </Link>
 
                                         <Link to='/login'>
-                                            <p className='ml-[70px] hover:text-orange-500'>ALREADY HAVE AN ACCOUNT ?</p>
+                                            <p className='lg:ml-[70px] hover:text-orange-500'>ALREADY HAVE AN ACCOUNT ?</p>
                                         </Link>
                                     </div>
                                 </div>
